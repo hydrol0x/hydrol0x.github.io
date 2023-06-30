@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className='section1'>
+      <section className='section1' id="home">
         <div className='greeting'>
           <div>
-              <h1 id="typewriter" className='greeting_1'>Hey, I'm</h1>
+              <h1 className='greeting_1'>Hey, I'm</h1>
               <h1 className='greeting_2'>JACOB RYABINKY</h1>
           </div>
           <p className='about_paragraph'>
@@ -18,8 +18,10 @@ function App() {
           </p> 
         </div>
       </section>
-      <section className='section2'></section>
-      <section className='section3'></section>
+      <section className='section2' id="about"></section>
+      <section className='section3' id='experience'></section>
+      <section className='section4' id='projects'></section>
+      <section className='section5' id='contact'></section>
     </>
   )
 }

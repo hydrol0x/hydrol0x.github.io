@@ -1,8 +1,8 @@
 /* #000814
-001D3D
-003566
-  FFC300
-  FFD60A */
+#001D3D
+#003566
+  #FFC300
+  #FFD60A */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&display=swap');
 
 :root {
@@ -43,12 +43,27 @@ h1.greeting_1 {
 }
 
 .section2 {
-  background: linear-gradient(180deg, var(--grad5) 0%, var(--grad5) 10%, hsl(0, 80%, 41%) 50%);
+  background: linear-gradient(180deg, var(--grad5) 0%, var(--grad5) 10%, hsl(0, 70%, 41%) 40%);
   height: 115vh;
 }
 
+/*https://coolors.co/palette/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0*/
+/* (purple section) */
+/* section 3 color pallete */
 .section3 {
   height: 115vh;
+  background-color: #7209b7;
+  background: linear-gradient(180deg, #7209b7 0%, #3f37c9 80%);
+}
+
+/* Section 4 color pallete */
+/* https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 */
+.section4 {
+  height: 115vh
+}
+
+.section5 {
+  height: 115vh
 }
 
 h1.greeting_2 {
