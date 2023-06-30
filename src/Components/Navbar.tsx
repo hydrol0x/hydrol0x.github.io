@@ -2,7 +2,7 @@ import './css/navbar.css'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='navbar_wrapper'>
         {/* <!-- HTML for the navbar -->  */}
         <ul className="navbar">
             <li><a href="#home">Home</a></li>
