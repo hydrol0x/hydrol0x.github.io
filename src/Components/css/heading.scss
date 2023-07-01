@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+$grad1: #FAA307;
+$grad2: #F48C06;
+$grad3: #E85D04;
+$grad4: #dc2f02;
+$grad5: #d00000;
+$background-color: hsl(43, 100%, 95%);
+$length: 400;
+h1.GradShadowHeading {
+    padding: 0;
+    margin: 0;
+    font-size: 72pt;
+    font-family: 'Caprasimo', serif;
+
+    $text-shadow: ();
+
+    @for $i from 1 through $length {
+        $offset: $i * 1px;
+        $color: null;
+        $percent-mix: 100 - calc($i / $length) * 100;
+
+        @if $i < 10 {
+            $color: $grad1;
+        }
+
+        @else if $i < 40 {
+            $color: $grad2;
+        }
+
+        @else if $i < 90 {
+            $color: $grad3;
+        }
+
+        @else if $i < 160 {
+            $color: $grad4;
+        }
+
+        @else if $i < 350 {
+            $color: $grad5;
+        }
+
+        @else {
+            $color: $grad5;
+        }
+
+        $text-shadow: append($text-shadow, 1px $offset 0 mix($color, $background-color, 85*1%), comma);
+        // $text-shadow: append($text-shadow, 1px $offset 0 mix($color, $background-color, min(100, 2*$percent-mix)), comma);
+        // $text-shadow: append($text-shadow, 1px $offset 0 rgba($color, (100-($i/2))/100), comma);
+    }
+
+    text-shadow: $text-shadow;
+}
