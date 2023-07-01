@@ -1,0 +1,112 @@
+/* #000814
+#001D3D
+#003566
+  #FFC300
+  #FFD60A */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&display=swap');
+
+:root {
+  --bg-color: hsl(43, 100%, 95%);
+  --grad1: #FAA307;
+  --grad2: #F48C06;
+  --grad3: #E85D04;
+  --grad4: #dc2f02;
+  --grad5: #d00000;
+}
+
+div.greeting {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1.greeting_1 {
+  font-family: 'Abril Fatface', cursive; 
+  font-size: 40pt;
+  margin:0;
+  padding: 0;
+}
+
+$section-height: 100vh; 
+
+.section1 {
+  background-color: var(--bg-color);
+  height: $section-height;
+}
+
+.about_paragraph {
+  margin-top: 90px;
+  margin-left: 20px;
+  padding: 10px;
+  width:500px;
+}
+
+.section2 {
+  background: linear-gradient(180deg, var(--grad5) 0%, var(--grad5) 10%, hsl(0, 70%, 41%) 40%);
+  height: 115vh;
+}
+
+/*https://coolors.co/palette/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0*/
+/* (purple section) */
+/* section 3 color pallete */
+.section3 {
+  height: 115vh;
+  background-color: #7209b7;
+  background: linear-gradient(180deg, #7209b7 0%, #3f37c9 80%);
+}
+
+/* Section 4 color pallete */
+/* https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 */
+.section4 {
+  height: 115vh
+}
+
+.section5 {
+  height: 115vh
+}
+
+$grad1: #FAA307;
+$grad2: #F48C06;
+$grad3: #E85D04;
+$grad4: #dc2f02;
+$grad5:#d00000;
+$background-color:hsl(43, 100%, 95%);
+$length: 400;
+h1.greeting_2 {
+  padding: 0;
+  margin: 0;
+  font-size: 72pt;
+  font-family: 'Caprasimo', serif;
+
+  $text-shadow: ();
+  @for $i from 1 through $length {
+    $offset: $i * 1px;
+    $color: null;
+    $percent-mix: 100 - ($i / $length) * 100;
+
+    @if $i < 10 {
+      $color: $grad1;
+    } 
+    @else if $i < 40 {
+      $color: $grad2;
+    }
+    @else if $i < 90 {
+      $color: $grad3;
+    }
+    @else if $i < 160 {
+      $color: $grad4;
+    }
+    @else if $i < 350 {
+      $color: $grad5;
+    } @else {
+      $color: $grad5;
+    }
+
+    $text-shadow: append($text-shadow, 1px $offset 0 mix($color, $background-color, 85), comma);
+    // $text-shadow: append($text-shadow, 1px $offset 0 mix($color, $background-color, min(100, 2*$percent-mix)), comma);
+    // $text-shadow: append($text-shadow, 1px $offset 0 rgba($color, (100-($i/2))/100), comma);
+  }
+  text-shadow: $text-shadow;
+}

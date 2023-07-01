@@ -1,5 +1,5 @@
 // @ts-nocheck
-import './App.css'
+import './App.scss'
 // @ts-ignore
 import Navbar from './Components/Navbar'
 
