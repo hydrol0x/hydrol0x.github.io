@@ -9,9 +9,23 @@
   --bg-color: hsl(43, 100%, 95%);
 }
 
-div.greeting {
+p {
+  padding:0;
+  margin:0;
+}
+
+div.flexbox-low {
   position: absolute;
-  top: 50%;
+  bottom: 30%; 
+  left: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-wrap: break-word;
+}
+
+div.flexbox-high {
+  position: absolute;
+  bottom: 40%; 
   left: 2%;
   display: flex;
   justify-content: space-evenly;
@@ -25,15 +39,17 @@ h1.greeting_1 {
   padding: 0;
 }
 
-$section-height: 100vh; 
+$section-height: 115vh; 
 
 section {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #000814;
+  position: relative;
 }
 
 .section1 {
-  background-color: var(--bg-color);
-  height: $section-height;
+  $bg-color:  hsl(43, 100%, 95%);
+  background-color: $bg-color;
+  height: 100vh;
 }
 
 .about_paragraph {
@@ -46,32 +62,45 @@ section {
 }
 
 $section2-color: #D72523;
-$section3-color:  #7209b7;
 .section2 {
   $hue: hue($section2-color);
   $sat: saturation($section2-color);
   $lit: lightness($section2-color);
-  background: linear-gradient(180deg, $section2-color 0%, $section2-color 10%, hsl($hue, .8*$sat, $lit) 80%);
+  background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 60%);
   height: 115vh;
 }
 
-/*https://coolors.co/palette/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0*/
-/* (purple section) */
-/* section 3 color pallete */
+$section3-color: #FF9C1A;
 .section3 {
   height: 115vh;
-  background-color: #7209b7;
-  background: linear-gradient(180deg, #7209b7 0%, #3f37c9 80%);
+  $hue: hue($section3-color);
+  $sat: saturation($section3-color);
+  $lit: lightness($section3-color);
+  // background-color: #FFB452;
+  background: linear-gradient(180deg, $section3-color 0%, $section3-color 1%, hsl($hue, $sat, 1.25*$lit) 50%);
+  // background: linear-gradient(180deg, #7209b7 0%, #3f37c9 80%);
 }
 
-/* Section 4 color pallete */
-/* https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 */
+$section4-color:#143642;
 .section4 {
-  height: 115vh
+  color:hsl(214, 88%, 9%);
+  $hue: hue($section4-color);
+  $sat: saturation($section4-color);
+  $lit: lightness($section4-color);
+  height: 115vh;
+  // background-color:#143642;
+  // background: linear-gradient(180deg, $section4-color 0%, $section4-color 2%, hsl($hue, $sat, 1.5*$lit) 45%);
+  background: linear-gradient(180deg, $section4-color 0%,  #C1D6DE 70%);
+  // background: linear-gradient(180deg, $section4-color 0%, #54717B 15%, #C1D6DE 40%);
+}
+
+.section4 p {
+  // color:white;
 }
 
 .section5 {
-  height: 115vh
+  height: 115vh;
+  background-color:hsl(43, 100%, 95%);
 }
 
 $grad1: #FAA307;
