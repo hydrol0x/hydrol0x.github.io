@@ -5,10 +5,47 @@ import Navbar from './Components/Navbar'
 import GradShadowHeading from './Components/GradShadowHeading'
 
 function App() {
+  const horse = `
+      ,
+      _,,)\.~,,._
+      (()\`  \`\`)\))),,_
+      |     \ ''((\)))),,_          ____
+      |6\`   |   ''((\())) "-.____.-"    \`-.-,
+      |    .'\    ''))))'                  \)))
+      |   |   \`.     ''                     ((((
+      \, _)     \/                          |))))
+        \`'        |                          (((((
+                  \                  |       ))))))
+                  \`|    |           ,\     /((((((
+                    |   / \`-.______.&lt;  \   |  )))))
+                    |   |  /         \`. \  \  ((((
+                    |  / \ |           \`.\  | (((
+                    \  | | |             )| |  ))
+                    | | | |             || |  ' 
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+                    | | | |             || |  
+  `
   const gradColors1 = ['#FBB028', '#F69C28', '#EB7426', '#E14C21', '#D72523'];
   const gradColors2 = ['#FFE8A3', '#FFD581', '#FFC25F', '#FFAF3C', '#FF9C1A']
-  const gradColors3 = ['#FFF1BF', '#C4C2A0', '#8A9481', '#4F6561','#143642']
+  const gradColors3 = ['#FDF1CB', '#C4C2A0', '#8A9481', '#4F6561','#143642']
   const gradColors4 = ['#FDF1CB', '#D4D5AE', '#ABB991', '#819D74','#588157']
+  const gradColors5 = ['#D4EAC8', '#9FB29B', '#6A796E', '#354141','#000814']
   return (
     <>
       <Navbar />
@@ -57,7 +94,22 @@ function App() {
           </p> 
         </div> 
       </section>
-      <section className='section5' id='contact'></section>
+      <section className='section5' id='contact'>
+        <div className='flexbox-low'>
+          <div>
+              {/* <h1 className='greeting_2'>JACOB RYABINKY</h1> */}
+            <GradShadowHeading text={"Contact"} gradColors={gradColors5} length={800}/>
+          </div>
+          <p className='about_paragraph'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          </p> 
+        </div>  
+      </section>
+      <section className='section6' id='end'>
+          <pre className='horse'>
+            {horse}
+          </pre> 
+      </section>
     </>
   )
 }

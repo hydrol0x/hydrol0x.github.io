@@ -47,7 +47,7 @@ section {
 }
 
 .section1 {
-  $bg-color:  hsl(43, 100%, 95%);
+  $bg-color:  #fff8e5;
   background-color: $bg-color;
   height: 100vh;
 }
@@ -94,13 +94,22 @@ $section4-color:#143642;
   // background: linear-gradient(180deg, $section4-color 0%, #54717B 15%, #C1D6DE 40%);
 }
 
-.section4 p {
-  // color:white;
-}
-
 .section5 {
   height: 115vh;
-  background-color:hsl(43, 100%, 95%);
+  background-color: #588157;
+}
+
+.section6 {
+  height: 50vh;
+  background-color: #000814;
+  overflow: hidden;
+}
+
+.section6 pre {
+  color:white;
+  position: absolute;
+  left:10%;
+  top:30%;
 }
 
 $grad1: #FAA307;

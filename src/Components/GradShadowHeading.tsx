@@ -8,6 +8,7 @@ const StyledH1 = styled.h1`
   font-size: 72pt;
   font-family: 'Caprasimo', serif;
   color:hsl(214, 88%, 9%);
+  letter-spacing: 2px; // helps alleviate problems with very small gaps between shadows
 
   text-shadow: ${({ length, gradColors }) => {
     let textShadow = '';
