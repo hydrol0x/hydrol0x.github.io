@@ -30,7 +30,8 @@ ul.navbar {
 
   ul.navbar li a {
     display: block;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
+    padding: 10px;
     color: #000;
     text-decoration: underline 0.05em #000814;
     text-underline-offset: 0.2em;
