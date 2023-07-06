@@ -2,6 +2,7 @@
 import './App.scss'
 // @ts-ignore
 import Navbar from './Components/Navbar'
+import FooterBar from './Components/FooterBar'
 import GradShadowHeading from './Components/GradShadowHeading'
 
 function App() {
@@ -38,8 +39,10 @@ function App() {
                     | | | |             || |  
                     | | | |             || |  
                     | | | |             || |  
-                    | | | |             || |  
-                    | | | |             || |  
+                    | | | |             || |    
+                  | | | | |   | /       || |   | _
+            . .. |_ / | / |  ._|||_| .. / | | _||__|_..  . not so infinite horse.
+                    
   `
   const gradColors1 = ['#FBB028', '#F69C28', '#EB7426', '#E14C21', '#D72523'];
   const gradColors2 = ['#FFE8A3', '#FFD581', '#FFC25F', '#FFAF3C', '#FF9C1A']
@@ -106,9 +109,15 @@ function App() {
         </div>  
       </section>
       <section className='section6' id='end'>
+        <div className='end-flexbox'>
           <pre className='horse'>
             {horse}
-          </pre> 
+          </pre>
+          <div className='copyright'>
+            <p>© Jacob Ryabinky 2023</p>
+          </div>
+          <FooterBar /> 
+        </div>
       </section>
     </>
   )

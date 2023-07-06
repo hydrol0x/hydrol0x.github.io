@@ -106,10 +106,26 @@ $section4-color:#143642;
 }
 
 .section6 pre {
-  color:white;
+  color:$section4-color;
+  // position: absolute;
+  // left:10%;
+  // top:30%;
+}
+
+div.end-flexbox {
+  display:flex;
+  justify-content: space-between;
+}
+
+div.copyright {
+  color:$section4-color;
+  position: relative;
+  width: 10%;
+}
+
+div.copyright p {
   position: absolute;
-  left:10%;
-  top:30%;
+  bottom: 20%;
 }
 
 $grad1: #FAA307;
