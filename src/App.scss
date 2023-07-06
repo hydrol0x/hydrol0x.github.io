@@ -115,17 +115,18 @@ $section4-color:#143642;
 div.end-flexbox {
   display:flex;
   justify-content: space-between;
+  height: 50vh;
 }
 
 div.copyright {
   color:$section4-color;
   position: relative;
-  width: 10%;
+  width: 20%;
 }
 
 div.copyright p {
   position: absolute;
-  bottom: 20%;
+  bottom: 3%;
 }
 
 $grad1: #FAA307;
