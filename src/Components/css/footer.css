@@ -14,34 +14,20 @@ ul.footerbar {
     overflow: hidden;
     background-color:none;
     width:100%;
-    font-size: large;
-    font-family: 'Abril Fatface', sans-serif;
-    font-weight: 600;
   }
 
 ul.footerbar li {
     float: right;
     margin-right:50px;
 }
-
-/* .logo {
-float:left !important; 
-/* padding: 15px; */
-/* } */ 
+ 
 
 ul.footerbar li a {
     display: block;
     padding: 14px 16px;
-    color:white;
-    text-decoration: underline 0.05em #000814;
-    text-underline-offset: 0.2em;
-    transition: text-decoration-color 300ms, text-underline-offset 300ms, filter 200ms;
+    transition: filter 200ms;
 }
 
 ul.footerbar li a:hover {
-    color: #003566;
-    text-decoration-color: #003566;
-    text-underline-offset: 0.3em;
     filter: brightness(.5);
 }
-

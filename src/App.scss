@@ -17,7 +17,7 @@ div.flexbox-low {
 div.flexbox-high {
   position: absolute;
   bottom: 40%; 
-  left: 2%;
+  left: 5%;
   display: flex;
   justify-content: space-evenly;
   overflow-wrap: break-word;
@@ -68,6 +68,12 @@ section {
   $lit: lightness($section2-color);
   height: 115vh;
   background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 60%);
+}
+
+img.aboutpics {
+  position: absolute;
+  right:5%;
+  bottom:5%;
 }
 
 .section3 {
@@ -129,8 +135,3 @@ $grad3: #E85D04;
 $grad4: #dc2f02;
 $grad5:#d00000;
 
-img {
-  position: absolute;
-  right:5%;
-  bottom:5%;
-}
