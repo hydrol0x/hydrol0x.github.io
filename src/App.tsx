@@ -59,9 +59,9 @@ function App() {
               {/* <h1 className='greeting_2'>JACOB RYABINKY</h1> */}
             <GradShadowHeading text={"JACOB RYABINKY"} gradColors={gradColors1} length={800}/>
           </div>
-          {/* <p className='about_paragraph'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-          </p>  */}
+          <p className='welcome_paragraph'>
+          Student at Suncoast Highschool and Palm Beach State College, currently focusing on scientific programming, machine learning, and data science.
+          </p> 
         </div>
       </section>
       <section className='section2' id="about">
