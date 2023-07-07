@@ -1,13 +1,4 @@
-/* #000814
-#001D3D
-#003566
-  #FFC300
-  #FFD60A */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&display=swap');
-
-:root {
-  --bg-color: hsl(43, 100%, 95%);
-}
 
 p {
   padding:0;
@@ -26,6 +17,15 @@ div.flexbox-low {
 div.flexbox-high {
   position: absolute;
   bottom: 40%; 
+  left: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-wrap: break-word;
+}
+
+div.flexbox-veryhigh {
+  position: absolute;
+  bottom: 50%; 
   left: 2%;
   display: flex;
   justify-content: space-evenly;
@@ -61,55 +61,50 @@ section {
   overflow-wrap: break-word;
 }
 
-$section2-color: #D72523;
 .section2 {
+  $section2-color: #D72523;
   $hue: hue($section2-color);
   $sat: saturation($section2-color);
   $lit: lightness($section2-color);
-  background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 60%);
   height: 115vh;
+  background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 60%);
 }
 
-$section3-color: #FF9C1A;
 .section3 {
-  height: 115vh;
+  $section3-color: #FF9C1A;
   $hue: hue($section3-color);
   $sat: saturation($section3-color);
   $lit: lightness($section3-color);
-  // background-color: #FFB452;
+  height: 115vh;
   background: linear-gradient(180deg, $section3-color 0%, $section3-color 1%, hsl($hue, $sat, 1.25*$lit) 50%);
-  // background: linear-gradient(180deg, #7209b7 0%, #3f37c9 80%);
 }
 
-$section4-color:#143642;
+$section4-color:#2F6D83;
 .section4 {
-  color:hsl(214, 88%, 9%);
   $hue: hue($section4-color);
   $sat: saturation($section4-color);
   $lit: lightness($section4-color);
+  color:hsl(214, 88%, 9%);
   height: 115vh;
-  // background-color:#143642;
-  // background: linear-gradient(180deg, $section4-color 0%, $section4-color 2%, hsl($hue, $sat, 1.5*$lit) 45%);
-  background: linear-gradient(180deg, $section4-color 0%,  #C1D6DE 70%);
-  // background: linear-gradient(180deg, $section4-color 0%, #54717B 15%, #C1D6DE 40%);
+  // background: linear-gradient(180deg, $section4-color 0%,  #469ab9 50%);
+  background: linear-gradient(180deg, $section4-color 0%, $section4-color 1%, hsl($hue, $sat, 2*$lit) 80%);
 }
 
 .section5 {
+  $section5-color: #588157;
+  $hue: hue($section5-color);
+  $sat: saturation($section5-color);
+  $lit: lightness($section5-color);
   height: 115vh;
-  background-color: #588157;
+  background: linear-gradient(180deg, $section5-color 0%, $section5-color 1%, hsl($hue, $sat, 1.25*$lit) 80%);
 }
 
+$section6-accent: #143642;
 .section6 {
+  color:$section6-accent;
   height: 50vh;
   background-color: #000814;
   overflow: hidden;
-}
-
-.section6 pre {
-  color:$section4-color;
-  // position: absolute;
-  // left:10%;
-  // top:30%;
 }
 
 div.end-flexbox {
@@ -119,7 +114,6 @@ div.end-flexbox {
 }
 
 div.copyright {
-  color:$section4-color;
   position: relative;
   width: 20%;
 }
@@ -134,3 +128,9 @@ $grad2: #F48C06;
 $grad3: #E85D04;
 $grad4: #dc2f02;
 $grad5:#d00000;
+
+img {
+  position: absolute;
+  right:5%;
+  bottom:5%;
+}
