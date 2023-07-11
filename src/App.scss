@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Noto+Serif+Makasar&display=swap');
 
 p {
   padding:0;
@@ -25,7 +26,7 @@ div.flexbox-high {
 
 div.flexbox-veryhigh {
   position: absolute;
-  bottom: 50%; 
+  bottom: 40%; 
   left: 2%;
   display: flex;
   justify-content: space-evenly;
@@ -42,8 +43,8 @@ h1.greeting_1 {
 $section-height: 115vh; 
 
 section {
-  border-bottom: 1px solid #000814;
   position: relative;
+  overflow: hidden;
 }
 
 .section1 {
@@ -55,7 +56,6 @@ section {
 section p {
   margin-top: 90px;
   margin-left: 20px;
-  padding: 10px;
   width:500px;
   word-wrap: break-word;
   overflow-wrap: break-word; 
@@ -67,19 +67,25 @@ section p {
   font-family: 'Abril Fatface', serif;
 }
 
+.info_para {
+  font-size: 13pt;
+  font-family: 'Noto Serif Makasar', serif;
+}
+
 .section2 {
   $section2-color: #D72523;
   $hue: hue($section2-color);
   $sat: saturation($section2-color);
   $lit: lightness($section2-color);
   height: 115vh;
-  background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 60%);
+  background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 80%);
 }
 
 img.aboutpics {
+  height:35em;
   position: absolute;
-  right:5%;
-  bottom:5%;
+  left:55em;
+  top:5em;
 }
 
 .section3 {
