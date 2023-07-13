@@ -55,8 +55,8 @@ function App() {
       <section className='section1' id="home">
         <div className='flexbox-high'>
           <div className='greeting_title'>
-              <h1 className='greeting_1'>Hey, I'm</h1>
-              {/* <h1 className='greeting_2'>JACOB RYABINKY</h1> */}
+            <h1 className='greeting_subhead'>Hey, I'm</h1>
+            {/* <h1 className='greeting_2'>JACOB RYABINKY</h1> */}
             <GradShadowHeading text={"JACOB RYABINKY"} gradColors={gradColors1} length={800}/>
           </div>
           <p className='welcome_paragraph'>
@@ -67,7 +67,7 @@ function App() {
       <section className='section2' id="about">
         <div className='flexbox-veryhigh'>
           <div>
-            <GradShadowHeading text={"About me"} gradColors={gradColors2} length={800}/>
+            <GradShadowHeading text={`About`} gradColors={gradColors2} length={800}/>
           </div>
           <p className='info_para'>
           As a dedicated student, my relentless pursuit of knowledge in the fields of STEM, particularly programming and computer science, has shaped my academic journey. I am deeply passionate about leveraging technology to drive innovation and solve complex problems. With a keen focus on programming, I have actively engaged in a diverse range of STEM projects that have allowed me to explore fascinating realms. From delving into the intricate world of nuclear physics to unraveling the mysteries of the human brain in neuroscience, my experiences have enriched my understanding and honed my skills. 

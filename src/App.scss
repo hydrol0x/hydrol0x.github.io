@@ -11,7 +11,8 @@ div.flexbox-low {
   bottom: 30%; 
   left: 2%;
   display: flex;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  justify-content: flex-start;
   overflow-wrap: break-word;
 }
 
@@ -20,7 +21,9 @@ div.flexbox-high {
   bottom: 40%; 
   left: 2%;
   display: flex;
-  justify-content: space-evenly;
+  padding: 0;
+  // justify-content: space-evenly;
+  justify-content: flex-start;
   overflow-wrap: break-word;
 }
 
@@ -29,14 +32,20 @@ div.flexbox-veryhigh {
   bottom: 40%; 
   left: 2%;
   display: flex;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  justify-content: flex-start;
   overflow-wrap: break-word;
 }
 
-h1.greeting_1 {
+h1.greeting_subhead {
   font-family: 'Abril Fatface', cursive; 
   font-size: 40pt;
+  max-width: fit-content;
   margin:0;
+  padding: 0;
+}
+
+div.greeting_title {
   padding: 0;
 }
 
@@ -77,15 +86,17 @@ section p {
   $hue: hue($section2-color);
   $sat: saturation($section2-color);
   $lit: lightness($section2-color);
-  height: 115vh;
+  height: 105vh;
   background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 80%);
 }
 
 img.aboutpics {
-  height:35em;
+  margin: 2em;
+  // height:35em;
+  height: 190%;
   position: absolute;
-  left:55em;
-  top:5em;
+  left:35em;
+  top:3em;
 }
 
 .section3 {
