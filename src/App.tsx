@@ -4,6 +4,7 @@ import './App.scss'
 import Navbar from './Components/Navbar'
 import FooterBar from './Components/FooterBar'
 import GradShadowHeading from './Components/GradShadowHeading'
+import ExperienceCard from './Components/ExperienceCard'
 
 function App() {
   const horse = `
@@ -80,9 +81,18 @@ function App() {
           <div>
             <GradShadowHeading text={"Experience"} gradColors={gradColors3} length={800}/>
           </div>
-          <p className='info_para'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-          </p> 
+          <ExperienceCard 
+              color1={""} 
+              color2={""} 
+              dateLine={"June 12 - July 21, 2023"}
+              descriptionList={
+                  ["Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion",
+                  "Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data",
+                  "Utilzied libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."]} 
+              heading={"Max Plank Florida Institute"}      
+              jobName={"Scientific Programming Intern"}
+              skillList={["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning"]}
+            />
         </div> 
       </section>
       <section className='section4' id='projects'>

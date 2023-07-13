@@ -47,6 +47,7 @@ h1.greeting_subhead {
 
 div.greeting_title {
   padding: 0;
+  flex-wrap: nowrap;
 }
 
 $section-height: 115vh; 
@@ -92,8 +93,7 @@ section p {
 
 img.aboutpics {
   margin: 2em;
-  // height:35em;
-  height: 180%;
+  height: 165%;
   position: absolute;
   left:40em;
   top:3em;
