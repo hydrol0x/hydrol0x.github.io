@@ -125,17 +125,20 @@ const ExperienceCard = ({color1, color2, heading, jobName, dateLine, description
         </Subheading>
         <Description>
             <DescriptionList>
-                {descriptionList.forEach((description) => {
+                {/* {descriptionList.forEach((description) => {
                     return <li>{description}</li>
-                })}
+                })} */}
+                  {descriptionList.map((description, index) => (
+                    <li key={index}>{description}</li>
+                    ))}
             </DescriptionList>
         </Description>
         <Footer>
           <SkillsList>
-            {skillList.forEach((skill) => {
-                return <Skill>{skill}</Skill>
-            })}
-          </SkillsList>
+                {skillList.map((skill, index) => (
+                <Skill key={index}>{skill}</Skill>
+                ))}
+            </SkillsList>
         </Footer>
       </ContentContainer>
       <PictureContainer>
