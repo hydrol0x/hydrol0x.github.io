@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const CardContainer = styled.div`
   display: flex;
+  height:100%;
   border: 5px solid #007267;
   border-radius: 8px;
   overflow:hidden;
@@ -16,7 +17,6 @@ const ContentContainer = styled.div`
   flex: 1;
   position:relative;
   width:300px; 
-//   height:35px;
   padding:10px;
   padding-right:15px;
 `;
@@ -102,12 +102,13 @@ const Skill = styled.li`
 const PictureContainer = styled.div`
   height: 100%;
   width: 200px; /* Adjust the width as per your needs */
-  overflow: hidden;
+//   overflow: hidden;
+background-color:red;
   padding:0;
 `;
 
 const Picture = styled.img`
-  height: 110%;
+  height: 100%;
   width: 100%;
   margin:0;
   padding:0;

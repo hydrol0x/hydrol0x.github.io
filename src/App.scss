@@ -11,10 +11,11 @@ div.flexbox-low {
   bottom: 30%; 
   left: 2%;
   display: flex;
-  // justify-content: space-evenly;
-  justify-content: flex-start;
   overflow-wrap: break-word;
+  justify-content: space-around;
+  width:95%;
 }
+
 
 div.flexbox-high {
   position: absolute;
@@ -22,9 +23,9 @@ div.flexbox-high {
   left: 2%;
   display: flex;
   padding: 0;
-  // justify-content: space-evenly;
-  justify-content: flex-start;
   overflow-wrap: break-word;
+  justify-content: space-around;
+  width:95%;
 }
 
 div.flexbox-veryhigh {
@@ -32,9 +33,9 @@ div.flexbox-veryhigh {
   bottom: 40%; 
   left: 2%;
   display: flex;
-  // justify-content: space-evenly;
-  justify-content: flex-start;
   overflow-wrap: break-word;
+  justify-content: space-between;
+  width:50%;
 }
 
 h1.greeting_subhead {
@@ -47,7 +48,6 @@ h1.greeting_subhead {
 
 div.greeting_title {
   padding: 0;
-  flex-wrap: nowrap;
 }
 
 $section-height: 115vh; 
@@ -78,7 +78,7 @@ section p {
 }
 
 .info_para {
-  font-size: 13pt;
+  font-size: min(2.1vh,1.1vw);
   font-family: 'Noto Serif Makasar', serif;
 }
 
@@ -91,11 +91,15 @@ section p {
   background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 80%);
 }
 
+div.about-content {
+  position: relative;
+}
+
 img.aboutpics {
-  margin: 2em;
+  margin: 3em;
   height: 165%;
   position: absolute;
-  left:40em;
+  left:20em;
   top:3em;
 }
 
@@ -106,6 +110,10 @@ img.aboutpics {
   $lit: lightness($section3-color);
   height: 115vh;
   background: linear-gradient(180deg, $section3-color 0%, $section3-color 1%, hsl($hue, $sat, 1.25*$lit) 50%);
+}
+
+.experience-card-carousel {
+  padding: 2em;
 }
 
 $section4-color:#2F6D83;

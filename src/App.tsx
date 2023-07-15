@@ -70,10 +70,12 @@ function App() {
           <div>
             <GradShadowHeading text={`About`} gradColors={gradColors2} length={800}/>
           </div>
-          <p className='info_para'>
-          As a dedicated student, my relentless pursuit of knowledge in the fields of STEM, particularly programming and computer science, has shaped my academic journey. I am deeply passionate about leveraging technology to drive innovation and solve complex problems. With a keen focus on programming, I have actively engaged in a diverse range of STEM projects that have allowed me to explore fascinating realms. From delving into the intricate world of nuclear physics to unraveling the mysteries of the human brain in neuroscience, my experiences have enriched my understanding and honed my skills. 
-          </p> 
-        <img src='src\assets\testpictures.png' className='aboutpics'/>
+          <div className='about-content'>
+            <p className='info_para'>
+            As a dedicated student, my relentless pursuit of knowledge in the fields of STEM, particularly programming and computer science, has shaped my academic journey. I am deeply passionate about leveraging technology to drive innovation and solve complex problems. With a keen focus on programming, I have actively engaged in a diverse range of STEM projects that have allowed me to explore fascinating realms. From delving into the intricate world of nuclear physics to unraveling the mysteries of the human brain in neuroscience, my experiences have enriched my understanding and honed my skills. 
+            </p> 
+            <img src='src\assets\testpictures.png' className='aboutpics'/>
+          </div>
         </div> 
       </section>
       <section className='section3' id='experience'>
@@ -81,7 +83,9 @@ function App() {
           <div>
             <GradShadowHeading text={"Experience"} gradColors={gradColors3} length={800}/>
           </div>
-          <ExperienceCard 
+          {/* TODO: Add a carousel (will just have placeholder for now) */}
+          <div className='experience-card-carousel'>
+            <ExperienceCard 
               color1={""} 
               color2={""} 
               dateLine={"June 12 - July 21, 2023"}
@@ -93,6 +97,8 @@ function App() {
               jobName={"Scientific Programming Intern"}
               skillList={["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning"]}
             />
+          </div>
+          
         </div> 
       </section>
       <section className='section4' id='projects'>
