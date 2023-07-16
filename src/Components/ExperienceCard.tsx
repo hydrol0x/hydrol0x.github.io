@@ -10,13 +10,14 @@ const CardContainer = styled.div`
   overflow:hidden;
   background: rgb(123,205,144);
   background: linear-gradient(90deg, rgba(123,205,144,1) 6%, rgba(66,215,189,1) 100%); 
+  color:#20252b;
 //   margin-bottom: 16px;
 `;
 
 const ContentContainer = styled.div`
   flex: 1;
   position:relative;
-  width:300px; 
+  width:350px; 
   padding:10px;
   padding-right:15px;
 `;
@@ -24,9 +25,9 @@ const ContentContainer = styled.div`
 const Heading = styled.h2`
   background-color:transparent;
   font-family: sans-serif;
-  color:white;
+  // color:white;
   margin:0;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 8px;
   border-bottom: 2px solid #007267; 
 `;
@@ -43,13 +44,13 @@ const Subheading = styled.div`
 
 const JobName = styled.h1`
     // padding:0;
-    color:white;
+    // color:white;
 `
 
 const DateLine = styled.h1`
     // padding:0;
     // margin:0;
-    color:white;
+    // color:white;
 `
 
 // TODO: make this a div
@@ -59,9 +60,9 @@ const Description = styled.div`
   padding:4px;
   border-radius:8px;
   margin:0;
-  font-size:10pt;
+  font-size:12pt;
   font-family:sans-serif;
-  color:white;
+  // color:white;
   margin-bottom: 8px;
 //   background-color:red;
   width:100%;
@@ -90,7 +91,7 @@ const SkillsList = styled.ul`
 `;
 
 const Skill = styled.li`
-  color:white;
+  // color:white;
   font-size:10pt;
   font-family:sans-serif;
   display: inline-block;

@@ -28,7 +28,7 @@ const StyledH1 = styled.h1`
         color = gradColors[1];
       } else if (i < 90) {
         color = gradColors[2];
-      } else if (i < 160) {
+      } else if (i < 200) {
         color = gradColors[3];
       } else if (i < 350) {
         color = gradColors[4];

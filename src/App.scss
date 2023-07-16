@@ -8,11 +8,13 @@ p {
 
 div.flexbox-low {
   position: absolute;
-  bottom: 30%; 
+  // bottom: 30%; 
+  top:20%;
   left: 2%;
   display: flex;
   overflow-wrap: break-word;
   justify-content: space-around;
+  align-items: baseline;
   width:95%;
 }
 
@@ -53,6 +55,7 @@ div.greeting_title {
 $section-height: 115vh; 
 
 section {
+  height: 110vh;
   position: relative;
   overflow: hidden;
 }
@@ -113,7 +116,8 @@ img.aboutpics {
 }
 
 .experience-card-carousel {
-  padding: 2em;
+  padding: 0em;
+  height: 30rem;
 }
 
 $section4-color:#2F6D83;

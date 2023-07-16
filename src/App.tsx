@@ -74,7 +74,7 @@ function App() {
             <p className='info_para'>
             As a dedicated student, my relentless pursuit of knowledge in the fields of STEM, particularly programming and computer science, has shaped my academic journey. I am deeply passionate about leveraging technology to drive innovation and solve complex problems. With a keen focus on programming, I have actively engaged in a diverse range of STEM projects that have allowed me to explore fascinating realms. From delving into the intricate world of nuclear physics to unraveling the mysteries of the human brain in neuroscience, my experiences have enriched my understanding and honed my skills. 
             </p> 
-            <img src='src\assets\testpictures.png' className='aboutpics'/>
+            <img src='assets\testpictures.png' className='aboutpics'/>
           </div>
         </div> 
       </section>
@@ -107,7 +107,11 @@ function App() {
             <GradShadowHeading text={"Projects"} gradColors={gradColors4} length={800}/>
           </div>
           <p className='info_para'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          <ul>
+            <li><a href="https://github.com/hydrol0x/Amazon-to-Ebay">Amazon Web Crawler</a></li>
+            <li><a href="https://github.com/hydrol0x/earnings.ly">Earning.ly</a></li>
+            <li><a href="https://github.com/hydrol0x/PYXIS-python">PYXIS Simulator Utility</a></li>
+          </ul>
           </p> 
         </div> 
       </section>
@@ -117,7 +121,7 @@ function App() {
             <GradShadowHeading text={"Contact"} gradColors={gradColors5} length={800}/>
           </div>
           <p className='info_para'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          Email: mrjacobry@gmail.com
           </p> 
         </div>  
       </section>
