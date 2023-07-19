@@ -42,8 +42,9 @@ div.flexbox-veryhigh {
 
 h1.greeting_subhead {
   font-family: 'Abril Fatface', serif; 
-  font-size: 40pt;
-  max-width: fit-content;
+  font-size: min(8vh, 4vw);
+  // max-width: fit-content;
+  margin-top: 10px;
   margin:0;
   padding: 0;
 }
@@ -120,9 +121,6 @@ img.aboutpics {
   height: 30rem;
 }
 
-.experience_card {
-  box-shadow: 5px 5px 0px #000814;
-}
 
 $section4-color:#2F6D83;
 .section4 {
