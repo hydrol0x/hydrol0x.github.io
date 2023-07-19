@@ -5,13 +5,18 @@ import styled from 'styled-components';
 const CardContainer = styled.div`
   display: flex;
   height:100%;
-  border: 5px solid #007267;
+  border: 2px solid #000814;
   border-radius: 8px;
   overflow:hidden;
   background: rgb(123,205,144);
   background: linear-gradient(90deg, rgba(123,205,144,1) 6%, rgba(66,215,189,1) 100%); 
   color:#20252b;
-//   margin-bottom: 16px;
+  transition: box-shadow .25s, transform 0.2s ease-in-out;
+  box-shadow: 5px 5px 0px #000814;
+
+  // &:hover {
+  //   transform: translate(-1%, -1%);
+  // }
 `;
 
 const ContentContainer = styled.div`

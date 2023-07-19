@@ -41,7 +41,7 @@ div.flexbox-veryhigh {
 }
 
 h1.greeting_subhead {
-  font-family: 'Abril Fatface', cursive; 
+  font-family: 'Abril Fatface', serif; 
   font-size: 40pt;
   max-width: fit-content;
   margin:0;
@@ -120,6 +120,10 @@ img.aboutpics {
   height: 30rem;
 }
 
+.experience_card {
+  box-shadow: 5px 5px 0px #000814;
+}
+
 $section4-color:#2F6D83;
 .section4 {
   $hue: hue($section4-color);
@@ -131,8 +135,8 @@ $section4-color:#2F6D83;
   background: linear-gradient(180deg, $section4-color 0%, $section4-color 1%, hsl($hue, $sat, 2*$lit) 80%);
 }
 
+$section5-color: #588157;
 .section5 {
-  $section5-color: #588157;
   $hue: hue($section5-color);
   $sat: saturation($section5-color);
   $lit: lightness($section5-color);
@@ -140,7 +144,15 @@ $section4-color:#2F6D83;
   background: linear-gradient(180deg, $section5-color 0%, $section5-color 1%, hsl($hue, $sat, 1.25*$lit) 80%);
 }
 
-$section6-accent: #143642;
+p.contact_message{
+  font-family: 'Abril Fatface', serif; 
+  font-size: 20pt;
+  color:#c5d4c4;
+  margin:0;
+  padding:0;
+}
+
+$section6-accent: #1b4757;
 .section6 {
   color:$section6-accent;
   height: 50vh;

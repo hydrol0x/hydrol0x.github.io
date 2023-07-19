@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar'
 import FooterBar from './Components/FooterBar'
 import GradShadowHeading from './Components/GradShadowHeading'
 import ExperienceCard from './Components/ExperienceCard'
+import ContactButton from './Components/ContactButton'
 
 function App() {
   const horse = `
@@ -86,6 +87,7 @@ function App() {
           {/* TODO: Add a carousel (will just have placeholder for now) */}
           <div className='experience-card-carousel'>
             <ExperienceCard 
+              className={"experience_card"}
               color1={""} 
               color2={""} 
               dateLine={"June 12 - July 21, 2023"}
@@ -120,9 +122,12 @@ function App() {
           <div>
             <GradShadowHeading text={"Contact"} gradColors={gradColors5} length={800}/>
           </div>
-          <p className='info_para'>
-          Email: mrjacobry@gmail.com
-          </p> 
+          <div className='contact_wrapper'>
+            <p className='contact_message'>
+            I'm always looking for my next opportunity, Whether you have a question or just want to say hello, I’ll try my best to get back to you!
+            </p> 
+            <ContactButton email={"mrjacobry@gmail.com"}/>
+          </div>
         </div>  
       </section>
       <section className='section6' id='end'>
