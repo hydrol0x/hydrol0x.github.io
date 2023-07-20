@@ -6,6 +6,7 @@ import FooterBar from './Components/FooterBar'
 import GradShadowHeading from './Components/GradShadowHeading'
 import ExperienceCard from './Components/ExperienceCard'
 import ContactButton from './Components/ContactButton'
+import ProjectCard from './Components/ProjectCard'
 
 function App() {
   const horse = `
@@ -88,17 +89,17 @@ function App() {
           <div className='experience-card-carousel'>
             <ExperienceCard 
               className={"experience_card"}
-              color1={""} 
-              color2={""} 
+              color1={"#7BCD90"} 
+              color2={"#58D3AC"} 
               dateLine={"June 12 - July 21, 2023"}
               descriptionList={
                   ["Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion",
                   "Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data",
-                  "Utilzied libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."]} 
+                  "Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."]} 
               heading={"Max Plank Florida Institute"}      
               jobName={"Scientific Programming Intern"}
               skillList={["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning"]}
-              link={'https://www.mpfi.org/'}
+              link={'https://www.mpfi.org/science/our-labs/bidaye-lab/'}
             />
           </div>
           
@@ -109,13 +110,27 @@ function App() {
           <div>
             <GradShadowHeading text={"Projects"} gradColors={gradColors4} length={800}/>
           </div>
-          <p className='info_para'>
-          <ul>
+          {/* <ul>
             <li><a href="https://github.com/hydrol0x/Amazon-to-Ebay">Amazon Web Crawler</a></li>
             <li><a href="https://github.com/hydrol0x/earnings.ly">Earning.ly</a></li>
             <li><a href="https://github.com/hydrol0x/PYXIS-python">PYXIS Simulator Utility</a></li>
-          </ul>
-          </p> 
+          </ul> */}
+
+          <div className='experience-card-carousel'>
+            <ProjectCard 
+              className={"experience_card"}
+              color1={"#7BCD90"} 
+              color2={"#58D3AC"} 
+              descriptionList={
+                  ["Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion",
+                  "Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data",
+                  "Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."]} 
+              heading={"Earning.ly"}      
+              subHeading={"Financial AI Assistant"}
+              skillList={["Python","PaLM","Google Cloud Vertex","SEC Edgar API","Anipose","Machine Learning"]}
+              link={'https://lablab.ai/event/google-vertex-ai-hackathon/peppermint/earningly'}
+            />
+          </div>
         </div> 
       </section>
       <section className='section5' id='contact'>

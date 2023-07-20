@@ -2,20 +2,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardContainer = styled.div`
+const CardContainer = styled.a`
   display: flex;
   height:100%;
   border: 2px solid #000814;
   border-radius: 8px;
   overflow:hidden;
-  background: linear-gradient(90deg, ${(props) => props.color1} 6%, ${(props) => props.color2} 100%);
+  background: rgb(123,205,144);
+  background: linear-gradient(90deg, rgba(123,205,144,1) 6%, rgba(66,215,189,1) 100%); 
   color:#20252b;
   transition: box-shadow .25s, transform 0.2s ease-in-out;
-  box-shadow: 5px 5px 0px #000814;
+  box-shadow: 2px 2px 0px #000814;
+  text-decoration:none;
 
-  // &:hover {
-  //   transform: translate(-1%, -1%);
-  // }
+  &:hover {
+    transform: translate(-1%, -1%);
+    box-shadow: 5px 5px 0px #000814;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -36,18 +39,12 @@ const Heading = styled.h2`
   border-bottom: 2px solid #007267; 
 
   > a {
-    // text-decoration:none;
-    text-decoration-thickness:1px;
+    text-decoration:none;
     color:black;
     width: 100%;
     height: 100%;
-    transition: color .2s, transform 0.2s ease-in-out;
   }
-
-  > a:hover {
-    color: #007267;
-    text-underline-offset: .15em;
-  }
+  
 `;
 
 const Subheading = styled.div`
@@ -60,7 +57,7 @@ const Subheading = styled.div`
     } 
 `
 
-const JobName = styled.h1`
+const ProjectCat = styled.h1`
     // padding:0;
     // color:white;
 `
@@ -73,8 +70,8 @@ const DateLine = styled.h1`
 
 // TODO: make this a div
 const Description = styled.div`
-  // background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
+  background: rgb(141,231,164);
+  background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
   padding:4px;
   border-radius:8px;
   margin:0;
@@ -95,8 +92,8 @@ const DescriptionList = styled.ul`
 `
 
 const Footer = styled.div`
-  // background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
+  background: rgb(141,231,164);
+  background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
   border-radius:8px;
   width:100%;
   padding:4px;
@@ -134,14 +131,13 @@ const Picture = styled.img`
   object-fit: cover;
 `;
 // June 12 - July 21, 2023
-const ExperienceCard = ({color1, color2, heading, jobName, dateLine, descriptionList, skillList, link}) => {
+const ProjectCard = ({color1, color2, heading, subHeading, descriptionList, skillList, link}) => {
   return (
-    <CardContainer color1={color1} color2={color2}>
+    <CardContainer href={"test.com"}>
       <ContentContainer>
-        <Heading><a href={link} target="_blank" rel="noopener noreferrer">{heading}</a></Heading>
+        <Heading><a href={link}>{heading}</a></Heading>
         <Subheading>
-            <JobName>{jobName}</JobName>
-            <DateLine>{dateLine}</DateLine>
+            <ProjectCat>{subHeading}</ProjectCat>
         </Subheading>
         <Description>
             <DescriptionList>
@@ -168,4 +164,4 @@ const ExperienceCard = ({color1, color2, heading, jobName, dateLine, description
   );
 }
 
-export default ExperienceCard;
+export default ProjectCard;
