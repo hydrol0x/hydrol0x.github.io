@@ -105,6 +105,8 @@ img.aboutpics {
   position: absolute;
   left:20em;
   top:3em;
+  // box-shadow: 5px 5px 0px #000814;
+  filter: drop-shadow(7px 7px 0 hsl(1, 30%, 10%));
 }
 
 .section3 {
@@ -118,7 +120,7 @@ img.aboutpics {
 
 .experience-card-carousel {
   padding: 0em;
-  height: 30rem;
+  height: 27rem;
 }
 
 

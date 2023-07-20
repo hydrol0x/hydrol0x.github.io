@@ -13,6 +13,7 @@ const Button = styled.a`
   font-weight: bold;
   font-size: 15pt;
   transition: background-color .25s, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 1px 1px 0px #000814;
 
   &:hover {
     background-color:rgb(240, 248, 255, .2);

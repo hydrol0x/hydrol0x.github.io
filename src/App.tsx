@@ -75,7 +75,7 @@ function App() {
             <p className='info_para'>
             As a dedicated student, my relentless pursuit of knowledge in the fields of STEM, particularly programming and computer science, has shaped my academic journey. I am deeply passionate about leveraging technology to drive innovation and solve complex problems. With a keen focus on programming, I have actively engaged in a diverse range of STEM projects that have allowed me to explore fascinating realms. From delving into the intricate world of nuclear physics to unraveling the mysteries of the human brain in neuroscience, my experiences have enriched my understanding and honed my skills. 
             </p> 
-            <img src='assets\testpictures.png' className='aboutpics'/>
+            <img src='src\assets\testpictures.png' className='aboutpics'/>
           </div>
         </div> 
       </section>
@@ -98,6 +98,7 @@ function App() {
               heading={"Max Plank Florida Institute"}      
               jobName={"Scientific Programming Intern"}
               skillList={["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning"]}
+              link={'https://www.mpfi.org/'}
             />
           </div>
           
@@ -124,7 +125,7 @@ function App() {
           </div>
           <div className='contact_wrapper'>
             <p className='contact_message'>
-            I'm always looking for my next opportunity, Whether you have a question or just want to say hello, I’ll try my best to get back to you!
+            Whether you've got an inquiry, an idea to share, or simply want to drop a friendly hello, I'm all ears, and I'll try my best to get back to you! 
             </p> 
             <ContactButton email={"mrjacobry@gmail.com"}/>
           </div>

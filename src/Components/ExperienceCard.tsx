@@ -30,11 +30,23 @@ const ContentContainer = styled.div`
 const Heading = styled.h2`
   background-color:transparent;
   font-family: sans-serif;
-  // color:white;
   margin:0;
   font-size: 30px;
   margin-bottom: 8px;
   border-bottom: 2px solid #007267; 
+
+  > a {
+    text-decoration:none;
+    color:black;
+    width: 100%;
+    height: 100%;
+    transition: color .2s, transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+  }
+
+  > a:hover {
+    color: #007267;
+    text-shadow: 2px 2px 0px white;
+  }
 `;
 
 const Subheading = styled.div`
@@ -121,11 +133,11 @@ const Picture = styled.img`
   object-fit: cover;
 `;
 // June 12 - July 21, 2023
-const ExperienceCard = ({color1, color2, heading, jobName, dateLine, descriptionList, skillList}) => {
+const ExperienceCard = ({color1, color2, heading, jobName, dateLine, descriptionList, skillList, link}) => {
   return (
     <CardContainer>
       <ContentContainer>
-        <Heading>{heading}</Heading>
+        <Heading><a href={link}>{heading}</a></Heading>
         <Subheading>
             <JobName>{jobName}</JobName>
             <DateLine>{dateLine}</DateLine>
