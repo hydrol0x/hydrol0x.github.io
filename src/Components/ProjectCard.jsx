@@ -9,7 +9,8 @@ const CardContainer = styled.a`
   border-radius: 8px;
   overflow:hidden;
   background: rgb(123,205,144);
-  background: linear-gradient(90deg, rgba(123,205,144,1) 6%, rgba(66,215,189,1) 100%); 
+  // background: linear-gradient(90deg, rgba(123,205,144,1) 6%, rgba(66,215,189,1) 100%); 
+  background: linear-gradient(90deg, ${(props) => props.color1} 6%, ${(props) => props.color2} 100%);
   color:#20252b;
   transition: box-shadow .25s, transform 0.2s ease-in-out;
   box-shadow: 2px 2px 0px #000814;
@@ -70,8 +71,7 @@ const DateLine = styled.h1`
 
 // TODO: make this a div
 const Description = styled.div`
-  background: rgb(141,231,164);
-  background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
   padding:4px;
   border-radius:8px;
   margin:0;
@@ -92,8 +92,7 @@ const DescriptionList = styled.ul`
 `
 
 const Footer = styled.div`
-  background: rgb(141,231,164);
-  background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
   border-radius:8px;
   width:100%;
   padding:4px;
@@ -118,9 +117,9 @@ const Skill = styled.li`
 const PictureContainer = styled.div`
   height: 100%;
   width: 200px; /* Adjust the width as per your needs */
-//   overflow: hidden;
-background-color:red;
+  overflow: hidden;
   padding:0;
+  position:relative;
 `;
 
 const Picture = styled.img`
@@ -129,11 +128,12 @@ const Picture = styled.img`
   margin:0;
   padding:0;
   object-fit: cover;
+  object-position: ${props => props.objectPosition || '50% 50%'};
 `;
 // June 12 - July 21, 2023
-const ProjectCard = ({color1, color2, heading, subHeading, descriptionList, skillList, link}) => {
+const ProjectCard = ({color1, color2, heading, subHeading, descriptionList, skillList, link, photoSrc, alt, imgPosition}) => {
   return (
-    <CardContainer href={"test.com"}>
+    <CardContainer target="_blank" rel="noopener noreferrer" href={link} color1={color1} color2={color2}>
       <ContentContainer>
         <Heading><a href={link}>{heading}</a></Heading>
         <Subheading>
@@ -158,7 +158,7 @@ const ProjectCard = ({color1, color2, heading, subHeading, descriptionList, skil
         </Footer>
       </ContentContainer>
       <PictureContainer>
-        <Picture src="https://www.mpfi.org/wp-content/uploads/Test/MaxPlanckFlorida_header_2400-2200x1431.jpg" alt="Job Picture" />
+        <Picture src={photoSrc} alt={alt} objectPosition={imgPosition}/>
       </PictureContainer>
     </CardContainer>
   );

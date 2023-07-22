@@ -32,8 +32,8 @@ const Heading = styled.h2`
   margin:0;
   font-size: 30px;
   margin-bottom: 8px;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #007267; 
+  // padding-bottom: 3px;
+  // border-bottom: 2px solid #007267; 
 
   > a {
     // text-decoration:none;
@@ -73,7 +73,6 @@ const DateLine = styled.h1`
 
 // TODO: make this a div
 const Description = styled.div`
-  // background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
   padding:4px;
   border-radius:8px;
@@ -95,7 +94,6 @@ const DescriptionList = styled.ul`
 `
 
 const Footer = styled.div`
-  // background: linear-gradient(45deg, rgba(141,231,164,0.35) 6%, rgba(61,228,199,0.35) 100%); 
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
   border-radius:8px;
   width:100%;
@@ -120,9 +118,8 @@ const Skill = styled.li`
 
 const PictureContainer = styled.div`
   height: 100%;
-  width: 200px; /* Adjust the width as per your needs */
-//   overflow: hidden;
-background-color:red;
+  width: 200px; 
+  overflow: hidden;
   padding:0;
 `;
 

@@ -1,12 +1,20 @@
 // @ts-nocheck
+
+// CSS
 import './App.scss'
-// @ts-ignore
+
+// Library imports
+import React from 'react';
+import { useSnapCarousel } from 'react-snap-carousel';
+
+// Components
 import Navbar from './Components/Navbar'
 import FooterBar from './Components/FooterBar'
 import GradShadowHeading from './Components/GradShadowHeading'
 import ExperienceCard from './Components/ExperienceCard'
 import ContactButton from './Components/ContactButton'
 import ProjectCard from './Components/ProjectCard'
+import CardCarousel from './Components/CardCarousel'
 
 function App() {
   const horse = `
@@ -52,6 +60,110 @@ function App() {
   const gradColors3 = ['#FDF1CA', '#CAD0B8', '#96AFA7', '#638E95','#2F6D83']
   const gradColors4 = ['#FDF1CB', '#D4D5AE', '#ABB991', '#819D74','#588157']
   const gradColors5 = ['#D4EAC8', '#9FB29B', '#6A796E', '#354141','#000814']
+
+  const projectCardData = {
+    className: "experience_card",
+    color1: "#61d48b",
+    color2: "#1dbbcf",
+    descriptionList: [
+      "Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion",
+      "Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data",
+      "Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."
+    ],
+    heading: "Earning.ly",
+    subHeading: "Financial AI Assistant",
+    skillList: [
+      "Python",
+      "PaLM",
+      "Google Cloud Vertex",
+      "SEC Edgar API",
+      "Anipose",
+      "Machine Learning"
+    ],
+    link: "https://lablab.ai/event/google-vertex-ai-hackathon/peppermint/earningly",
+    photoSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg",
+    alt: "Stock Market Photo, Katrina.Tuliao CC BY 2.0 via Wikimedia Commons",
+    imgPosition: "20% 50%"
+  };
+  
+  const projectsData = [
+    {
+      className: "experience_card",
+      color1: "#61d48b",
+      color2: "#1dbbcf",
+      descriptionList: [
+        "Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion",
+        "Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data",
+        "Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."
+      ],
+      heading: "Earning.ly",
+      subHeading: "Financial AI Assistant",
+      skillList: [
+        "Python",
+        "PaLM",
+        "Google Cloud Vertex",
+        "SEC Edgar API",
+        "Anipose",
+        "Machine Learning"
+      ],
+      link: "https://lablab.ai/event/google-vertex-ai-hackathon/peppermint/earningly",
+      photoSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg",
+      alt: "Stock Market Photo, Katrina.Tuliao CC BY 2.0 via Wikimedia Commons",
+      imgPosition: "20% 50%"
+    },
+    {
+      className: "fake_experience_card",
+      color1: "#abcdef",
+      color2: "#fedcba",
+      descriptionList: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Pellentesque euismod velit vel neque posuere, nec tempor quam tincidunt.",
+        "Vestibulum dapibus mi nec felis bibendum, sit amet pulvinar ligula tincidunt.",
+      ],
+      heading: "Fake Project",
+      subHeading: "Placeholder Subheading",
+      skillList: ["React", "Styled-components", "Placeholder Skill"],
+      link: "https://example.com/fake-project",
+      photoSrc: "https://via.placeholder.com/400",
+      alt: "Placeholder Image",
+      imgPosition: "50% 50%",
+    },
+    {
+      className: "fake_experience_card",
+      color1: "#abcdef",
+      color2: "#fedcba",
+      descriptionList: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Pellentesque euismod velit vel neque posuere, nec tempor quam tincidunt.",
+        "Vestibulum dapibus mi nec felis bibendum, sit amet pulvinar ligula tincidunt.",
+      ],
+      heading: "Fake Project",
+      subHeading: "Placeholder Subheading",
+      skillList: ["React", "Styled-components", "Placeholder Skill"],
+      link: "https://example.com/fake-project",
+      photoSrc: "https://via.placeholder.com/400",
+      alt: "Placeholder Image",
+      imgPosition: "50% 50%",
+    },
+    {
+      className: "fake_experience_card",
+      color1: "#abcdef",
+      color2: "#fedcba",
+      descriptionList: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Pellentesque euismod velit vel neque posuere, nec tempor quam tincidunt.",
+        "Vestibulum dapibus mi nec felis bibendum, sit amet pulvinar ligula tincidunt.",
+      ],
+      heading: "Fake Project",
+      subHeading: "Placeholder Subheading",
+      skillList: ["React", "Styled-components", "Placeholder Skill"],
+      link: "https://example.com/fake-project",
+      photoSrc: "https://via.placeholder.com/400",
+      alt: "Placeholder Image",
+      imgPosition: "50% 50%",
+    },
+  ]
+
   return (
     <>
       <Navbar />
@@ -116,21 +228,24 @@ function App() {
             <li><a href="https://github.com/hydrol0x/PYXIS-python">PYXIS Simulator Utility</a></li>
           </ul> */}
 
-          <div className='experience-card-carousel'>
-            <ProjectCard 
-              className={"experience_card"}
-              color1={"#7BCD90"} 
-              color2={"#58D3AC"} 
-              descriptionList={
-                  ["Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion",
-                  "Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data",
-                  "Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."]} 
-              heading={"Earning.ly"}      
-              subHeading={"Financial AI Assistant"}
-              skillList={["Python","PaLM","Google Cloud Vertex","SEC Edgar API","Anipose","Machine Learning"]}
-              link={'https://lablab.ai/event/google-vertex-ai-hackathon/peppermint/earningly'}
-            />
-          </div>
+            {/* <ProjectCard 
+              // className={"experience_card"}
+              // color1={"#61d48b"} 
+              // color2={"#1dbbcf"} 
+              // descriptionList={
+              //     ["Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion",
+              //     "Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data",
+              //     "Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."]} 
+              // heading={"Earning.ly"}      
+              // subHeading={"Financial AI Assistant"}
+              // skillList={["Python","PaLM","Google Cloud Vertex","SEC Edgar API","Anipose","Machine Learning"]}
+              // link={'https://lablab.ai/event/google-vertex-ai-hackathon/peppermint/earningly'}
+              // photoSrc={"https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg"}
+              // alt={"Stock Market Photo, Katrina.Tuliao CC BY 2.0 via Wikimedia Commons"}
+              // imgPosition={'20% 50%'}
+              {...projectCardData}
+            /> */}
+            <CardCarousel cardData={projectsData}/>
         </div> 
       </section>
       <section className='section5' id='contact'>
@@ -140,7 +255,7 @@ function App() {
           </div>
           <div className='contact_wrapper'>
             <p className='contact_message'>
-            Whether you've got an inquiry, an idea to share, or simply want to drop a friendly hello, I'm all ears, and I'll try my best to get back to you! 
+            Whether you've got an inquiry, an idea to share, or simply want to drop a friendly hello<b>—</b> I'm all ears, and I'll try my best to get back to you! 
             </p> 
             <ContactButton email={"mrjacobry@gmail.com"}/>
           </div>
