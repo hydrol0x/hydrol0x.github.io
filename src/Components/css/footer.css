@@ -3,6 +3,7 @@ div.footerbar_wrapper {
   background-color: none;
   position: relative;
   width:50%;
+  overflow: hidden;
 }
 
 ul.footerbar {
@@ -11,7 +12,6 @@ ul.footerbar {
     list-style-type: none;
     margin: 0;
     padding:0;
-    overflow: hidden;
     background-color:none;
     width:100%;
   }

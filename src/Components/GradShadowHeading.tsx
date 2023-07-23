@@ -15,7 +15,7 @@ const StyledH1 = styled.h1`
   letter-spacing: 2px; // helps alleviate problems with very small gaps between shadows
 
   text-shadow: ${({ length, gradColors }) => {
-    length = 1000;
+    length = 1500;
     let textShadow = '';
 
     for (let i = 1; i <= length; i++) {
