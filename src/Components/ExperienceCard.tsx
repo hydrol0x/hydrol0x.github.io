@@ -3,6 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CardContainer = styled.div`
+  @media (max-width: 1280px) {
+    transform: scale(.8);
+  }
   display: flex;
   height:100%;
   border: 2px solid #000814;
