@@ -72,15 +72,16 @@ section {
 }
 
 section p {
-  margin-top: 90px;
-  margin-left: 20px;
-  width:500px;
   word-wrap: break-word;
   overflow-wrap: break-word; 
 }
 
 .welcome_paragraph {
+  max-width: 500px; 
   font-size: 20px;
+  padding:10px;
+  margin-right:20px;
+  margin-top:80px;
   @media (min-width: 1000px) {
     font-size:2vw;
   }
@@ -99,6 +100,8 @@ section p {
 }
 
 .info_para {
+  margin-top: 90px;
+  margin-left: 20px;
   font-size:12pt;
   max-width: 28rem;
   @media (max-width: 1175px) {
@@ -165,6 +168,7 @@ $section5-color: #588157;
 p.contact_message{
   font-family: 'Abril Fatface', serif; 
   font-size: 20pt;
+  width:500px;
   color:#c5d4c4;
   margin:0;
   padding:0;
