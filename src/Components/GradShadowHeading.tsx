@@ -5,9 +5,15 @@ import styled from 'styled-components';
 const StyledH1 = styled.h1`
   padding: 0;
   margin: 0;
-  font-size: 50px;
-  @media (min-width: 900px) {
+  font-size:5.5vw;
+  @media (min-width: 909px) {
     font-size: 5.5vw
+  }
+  @media (max-width: 800px) {
+    font-size: 5vw; 
+  }
+  @media (max-width: 650px) {
+    font-size: 40px;
   }
   font-family: 'Caprasimo', serif;
   color:hsl(214, 88%, 9%);

@@ -99,9 +99,13 @@ section p {
 }
 
 .info_para {
-  font-size:11pt;
-  font-family: 'Noto Serif Makasar', serif;
+  font-size:12pt;
   max-width: 28rem;
+  @media (max-width: 1175px) {
+    font-size:8pt;
+    max-width: 18rem;
+  }
+  font-family: 'Noto Serif Makasar', serif;
 }
 
 div.about-text-wrapper{
