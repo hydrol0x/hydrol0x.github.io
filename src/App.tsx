@@ -133,10 +133,11 @@ function App() {
       descriptionList: [
         "I'm always working on more projects and expanding my skillset...",
         "If you're interested in working together, feel free to contact me!",
+        "Or, visit my github to see some smaller work.",
       ],
-      heading: "More Coming Soon...",
+      heading: "More Projects...",
       subHeading: "An amazing project",
-      skillList: ["Time", "Effort", "Pure Skill"],
+      skillList: ["Time", "Effort", "Skill"],
       link: "#contact",
       photoSrc: "https://via.placeholder.com/100",
       alt: "Placeholder Image",
@@ -164,7 +165,11 @@ function App() {
           <div className="about-text-wrapper">
             <GradShadowHeading text={`About`} gradColors={gradColors2} length={800}/>
             <p className='info_para'>
-            As a dedicated student, my relentless pursuit of knowledge in the fields of STEM, particularly programming and computer science, has shaped my academic journey. I am deeply passionate about leveraging technology to drive innovation and solve complex problems. With a keen focus on programming, I have actively engaged in a diverse range of STEM projects that have allowed me to explore fascinating realms. From delving into the intricate world of nuclear physics to unraveling the mysteries of the human brain in neuroscience, my experiences have enriched my understanding and honed my skills. 
+            Computer science is my passion, but I think that great things come from intersections of knowledge. That's why I work to apply my knowledge of programming to whatever I can think of— whether it's in scientific data analysis, diabetes care, or even just to help me learn sheet music on the guitar. 
+
+            I also love to teach and share my skills. Whether it's sharing  among my friends, tutoring in the school programming club, or developing comprehensive lessons, I think that teaching is the best path towards connection and collaboration.
+
+            I'm always on the look out for the next big technology or my next <a href="#contact" style={{"color": "#003566"}}>collaboration</a>!
             </p> 
           </div>
           <div className='aboutpics'>
@@ -241,7 +246,7 @@ function App() {
           </div>
         </div>  
       </section>
-      <section className='section6' id='end'>
+      <footer className='section6' id='end'>
         <div className='end-flexbox'>
           <pre className='horse'>
             {horse}
@@ -251,7 +256,7 @@ function App() {
           </div>
           <FooterBar /> 
         </div>
-      </section>
+      </footer>
     </>
   )
 }
