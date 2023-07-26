@@ -5,14 +5,15 @@ import styled from 'styled-components';
 const StyledH1 = styled.h1`
   padding: 0;
   margin: 0;
-  // font-size: 72pt;
-  // font-size:12vh;
-  // font-size:5vw;
-  font-size: min(12vh, 6vw); // todo: figure out more stuff with this
+  font-size: 50px;
+  @media (min-width: 900px) {
+    font-size: 5.5vw
+  }
   font-family: 'Caprasimo', serif;
   color:hsl(214, 88%, 9%);
-  max-width: fit-content;
+  max-width:60rem;
   letter-spacing: 2px; // helps alleviate problems with very small gaps between shadows
+  overflow-wrap:anywhere;
 
   text-shadow: ${({ length, gradColors }) => {
     length = 1500;

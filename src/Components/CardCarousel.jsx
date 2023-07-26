@@ -3,11 +3,14 @@ import { useSnapCarousel } from 'react-snap-carousel';
 import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
 
+const smallDisplayWidth = "1400px";
 const CarouselContainer = styled.div`
+  
   position: relative;
 //   width: 50%;
-  width: 50rem;
-  height: 100%;
+  
+  width:40rem;
+  // height: 100%;
 //   overflow: hidden;
 `;
 
@@ -41,7 +44,10 @@ const Button = styled.button`
   height:50px;
   padding-bottom:5px;
   transition: box-shadow .25s ease-in-out, transform 0.3s ease-in-out;
-  ${(props) => (props.left ? 'left: 0px;' : 'right: 10px;')}
+  @media (max-width: ${smallDisplayWidth}) {
+    ${(props) => (props.left ? 'left: 20px;' : 'right: 35px;')}
+  }
+  ${(props) => (props.left ? 'left: -50px;' : 'right: -30px;')}
 
   &:hover {
     background-color:rgb(240, 248, 255, .2);
@@ -55,9 +61,11 @@ const PositionIndicator = styled.div`
   font-family: 'Abril Fatface';
   font-size:14pt;
   position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 46%;
+  @media (max-width: ${smallDisplayWidth}) {
+    bottom:35px;
+    font-size: 12pt;
+  }
 `;
 
 const CardCarousel = ({ cardData }) => {

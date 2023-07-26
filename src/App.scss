@@ -5,6 +5,7 @@ p {
   margin:0;
 }
 
+// TODO: fix up the flexboxes, clear up naming / remove redundant
 div.flexbox-low {
   position: absolute;
   // bottom: 30%; 
@@ -20,7 +21,7 @@ div.flexbox-low {
 
 div.flexbox-high {
   position: absolute;
-  bottom: 40%; 
+  top:20%;
   left: 2%;
   display: flex;
   padding: 0;
@@ -41,7 +42,11 @@ div.flexbox-veryhigh {
 
 h1.greeting_subhead {
   font-family: 'Abril Fatface', serif; 
-  font-size: min(8vh, 4vw);
+  // font-size: min(8vh, 4vw);
+  font-size:30px;
+  @media (min-width: 750px) {
+    font-size: 4vw
+  }
   // max-width: fit-content;
   margin-top: 10px;
   margin:0;
@@ -75,7 +80,11 @@ section p {
 }
 
 .welcome_paragraph {
-  font-size: 25pt;
+  font-size: 20px;
+  @media (min-width: 1000px) {
+    font-size:2vw;
+  }
+
   color:  hsl(44, 65%, 80%);
   font-family: 'Abril Fatface', serif;
 }

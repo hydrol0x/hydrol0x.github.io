@@ -2,7 +2,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const smallDisplayWidth = "1400px";
 const CardContainer = styled.a`
+  @media (max-width:${smallDisplayWidth}) {
+    transform:scale(.75);
+  }
   display: flex;
   height:100%;
   border: 2px solid #000814;
@@ -12,12 +16,15 @@ const CardContainer = styled.a`
   // background: linear-gradient(90deg, rgba(123,205,144,1) 6%, rgba(66,215,189,1) 100%); 
   background: linear-gradient(90deg, ${(props) => props.color1} 6%, ${(props) => props.color2} 100%);
   color:#20252b;
-  transition: box-shadow .25s, transform 0.2s ease-in-out;
+  transition: box-shadow .25s, transform 0.25s ease-in-out;
   box-shadow: 2px 2px 0px #000814;
   text-decoration:none;
 
   &:hover {
-    transform: translate(-1%, -1%);
+    transform: scale(1) translate(-.5%, -.5%);
+    @media (max-width:${smallDisplayWidth}) {
+      transform:scale(.75) translate(-.5%, -.5%);
+    }
     box-shadow: 5px 5px 0px #000814;
   }
 `;
