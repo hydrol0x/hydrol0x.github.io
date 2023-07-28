@@ -6,14 +6,21 @@ const StyledH1 = styled.h1`
   padding: 0;
   margin: 0;
   font-size:5.5vw;
-  @media (min-width: 909px) {
-    font-size: 5.5vw
+
+  @media (max-width: 650px) {
+    font-size: 40px;
   }
+  
   @media (max-width: 800px) {
     font-size: 5vw; 
   }
-  @media (max-width: 650px) {
-    font-size: 40px;
+  
+  @media (min-width: 909px) {
+    font-size: 5.5vw;
+  }
+  
+  @media (min-width: 1700px) {
+    font-size: 93.5px;
   }
   font-family: 'Caprasimo', serif;
   color:hsl(214, 88%, 9%);

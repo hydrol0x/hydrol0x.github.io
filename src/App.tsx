@@ -173,7 +173,7 @@ function App() {
             </p> 
           </div>
           <div className='aboutpics'>
-            <img src='src\assets\testpictures.png' />
+            <img src='assets\testpictures.png' />
           </div>
         </div> 
       </section>
