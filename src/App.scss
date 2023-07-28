@@ -67,6 +67,7 @@ section {
 
 .section1 {
   $bg-color:  #fff8e5;
+  // $bg-color:  #fff8e5;
   background-color: $bg-color;
   height: 100vh;
 }
@@ -86,7 +87,8 @@ section p {
     font-size:2vw;
   }
 
-  color:  hsl(44, 65%, 75%);
+  color:  hsl(44, 85%, 65%);
+
   // color:black;
   // color:#FFF8E5;
   letter-spacing: 1px;
