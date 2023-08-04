@@ -89,6 +89,23 @@ function App() {
   const projectsData = [
     {
       className: "experience_card",
+      color1: "#5de8dc",
+      color2: "#52cbd1",
+      descriptionList: [
+        "Retriever allows users with visual impairment or blindness to use certain aspects of their computer just with their voice.",
+        "Uses a large language model to perform natural language processing on the users command and determine the intent.",
+        "Performs actions very quickly without human interaction with the OS GUI.",
+      ],
+      heading: "Retriever AI",
+      subHeading: "Accesibility tool for the visually impaired",
+      skillList: ["OpenAI Whisper", "PaLM2", "C#", "WinUI 3.0", "ElevenLabs Voice Generation",],
+      link: "https://retriever.fyi/",
+      photoSrc: "https://github.com/hydrol0x/retriever/assets/34951139/21c7998b-83a8-4438-a3bd-3822ccee0dd3",
+      alt: "Amazon Logo",
+      imgPosition: "42% 50%",
+    },
+    {
+      className: "experience_card",
       color1: "#61d48b",
       color2: "#1dbbcf",
       descriptionList: [
@@ -120,7 +137,7 @@ function App() {
       ],
       heading: "Amazon Web Crawler",
       subHeading: "Amazon Product Page Crawler",
-      skillList: ["HTTP requests", "Beautiful Soup", "Placeholder Skill", "HTML",],
+      skillList: ["HTTP requests", "Beautiful Soup", "HTML",],
       link: "https://github.com/hydrol0x/Amazon-to-Ebay/blob/master/amzn_product_scraper.py",
       photoSrc: "https://github.com/hydrol0x/hydrol0x.github.io/assets/34951139/9576a973-a393-4a8d-a600-bfbc7f0a756f",
       alt: "Amazon Logo",
@@ -173,7 +190,7 @@ function App() {
             </p> 
           </div>
           <div className='aboutpics'>
-            <img src='assets\testpictures.png' />
+            <img src='src\assets\testpictures.png' />
           </div>
         </div> 
       </section>
