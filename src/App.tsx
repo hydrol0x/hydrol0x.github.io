@@ -190,7 +190,8 @@ function App() {
             </p> 
           </div>
           <div className='aboutpics'>
-            <img src='src\assets\testpictures.png' />
+            {/* <img src='assets\testpictures.png' /> */}
+            <img src='https://github.com/hydrol0x/hydrol0x.github.io/blob/main/src/assets/testpictures.png?raw=true' />
           </div>
         </div> 
       </section>
