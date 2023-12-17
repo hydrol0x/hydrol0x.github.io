@@ -57,7 +57,8 @@ const Button = styled.button`
 `;
 
 const PositionIndicator = styled.div`
-  font-family: "Abril Fatface";
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
   font-size: 14pt;
   position: absolute;
   left: 46%;

@@ -177,8 +177,8 @@ function App() {
     },
     {
       className: "experience_card",
-      color1: "#d8f0e7",
-      color2: "#ceebed",
+      color1: "rgba(234,235,239, .5)",
+      color2: "rgba(162,176,226,.8)",
       descriptionList: [
         "I'm always working on more projects and expanding my skillset...",
         "If you're interested in working together, feel free to contact me!",
@@ -188,9 +188,10 @@ function App() {
       subHeading: "An amazing project",
       skillList: ["Time", "Effort", "Skill"],
       link: "#contact",
-      photoSrc: "https://via.placeholder.com/100",
-      alt: "Placeholder Image",
-      imgPosition: "-40% 20%",
+      photoSrc:
+        "https://github.com/hydrol0x/hydrol0x.github.io/assets/34951139/6e81c53c-1eff-456a-b7d6-1f862aa500d0",
+      alt: "",
+      // imgPosition: "-40% 20%",
     },
   ];
 
@@ -212,7 +213,8 @@ function App() {
             Student at Suncoast Highschool and Palm Beach State College,
             currently focusing on{" "}
             <mark>
-              scientific programming, machine learning, and data science.
+              scientific programming, <mark>machine</mark> learning, and data
+              science.
             </mark>
           </p>
         </div>
@@ -229,7 +231,7 @@ function App() {
               Computer science is my passion, but I think that{" "}
               <mark>
                 <strong>
-                  great things come from intersections of knowledge
+                  great things come from <mark>intersections of knowledge</mark>
                 </strong>
               </mark>
               . That's why I work to apply my knowledge of programming to
