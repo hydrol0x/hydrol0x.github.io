@@ -1,33 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Concert+One&family=Noto+Serif+Makasar&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Concert+One&family=Noto+Serif+Makasar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;0,800;1,400&family=Noto+Serif&display=swap");
 p {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 // TODO: fix up the flexboxes, clear up naming / remove redundant
 div.flexbox-low {
   position: absolute;
-  // bottom: 30%; 
-  top:20%;
+  // bottom: 30%;
+  top: 30%;
   left: 2%;
   display: flex;
   overflow-wrap: break-word;
   justify-content: space-around;
   align-items: baseline;
-  width:95%;
+  width: 95%;
 }
-
 
 div.flexbox-high {
   position: absolute;
-  top:20%;
+  top: 30%;
   left: 2%;
   display: flex;
   padding: 0;
   overflow-wrap: break-word;
   justify-content: space-around;
-  width:100%;
+  width: 100%;
 }
 
 div.flexbox-veryhigh {
@@ -36,22 +35,24 @@ div.flexbox-veryhigh {
   display: flex;
   overflow-wrap: break-word;
   justify-content: space-between;
-  width:95%;
+  width: 95%;
 }
 
 h1.greeting_subhead {
-  font-family: 'Abril Fatface', serif; 
+  // font-family: "Abril Fatface", serif;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
   // font-size: min(8vh, 4vw);
-  font-size:30px;
+  font-size: 30px;
   @media (min-width: 750px) {
-    font-size: 4vw
+    font-size: 4vw;
   }
   @media (min-width: 1700px) {
     font-size: 68px;
   }
   // max-width: fit-content;
   margin-top: 10px;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -59,7 +60,7 @@ div.greeting_title {
   padding: 0;
 }
 
-$section-height: 115vh; 
+$section-height: 115vh;
 
 section {
   height: 110vh;
@@ -69,7 +70,7 @@ section {
 }
 
 .section1 {
-  $bg-color:  #fff8e5;
+  $bg-color: #fff8e5;
   // $bg-color:  #fff8e5;
   background-color: $bg-color;
   height: 100vh;
@@ -77,75 +78,90 @@ section {
 
 section p {
   word-wrap: break-word;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 
 .welcome_paragraph {
-  max-width: 500px; 
+  max-width: 500px;
   font-size: 2vw;
-  padding:10px;
-  margin-right:20px;
-  margin-top:80px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 80px;
   @media (min-width: 2000px) {
-    font-size:40px;
+    font-size: 40px;
   }
 
-  color:  hsl(44, 85%, 65%);
+  color: rgba(0, 0, 0, 0.5);
 
   // color:black;
   // color:#FFF8E5;
   letter-spacing: 1px;
-  font-family: 'Abril Fatface', serif;
+  // font-family: "Abril Fatface", serif;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
 }
 
 .section2 {
-  $section2-color: #D72523;
+  $section2-color: #d72523;
   $hue: hue($section2-color);
   $sat: saturation($section2-color);
   $lit: lightness($section2-color);
   height: 105vh;
-  background: linear-gradient(180deg, $section2-color 0%, hsl($hue, $sat, 1.25*$lit) 80%);
+  background: linear-gradient(
+    180deg,
+    $section2-color 0%,
+    hsl($hue, $sat, 1.25 * $lit) 80%
+  );
 }
 
 .info_para {
+  // font-family: "Noto Serif", serif;
+  font-family: "Noto Sans", sans-serif;
+  // font-weight: 400;
+  font-weight: 500;
   margin-top: 90px;
   margin-left: 20px;
-  font-size:12pt;
+  font-size: 15pt;
+  color: hsl(1, 65%, 95%);
   max-width: 28rem;
   @media (max-width: 1175px) {
-    font-size:8pt;
+    font-size: 11pt;
     max-width: 18rem;
   }
-  font-family: 'Noto Serif Makasar', serif;
+  // font-family: "Noto Serif Makasar", serif;
 }
-
-div.about-text-wrapper{
-  display:flex;
+div.about-text-wrapper {
+  display: flex;
   max-width: 80%;
   align-items: baseline;
 }
 
 div.aboutpics {
   align-self: center;
-  max-width:40%;
+  max-width: 40%;
   min-width: 15rem;
 }
 
 div.aboutpics > img {
-  width:100%;
+  width: 100%;
   max-height: 600px;
-  height:auto;
+  height: auto;
   object-fit: contain;
   filter: drop-shadow(7px 7px 0 hsl(1, 30%, 10%));
 }
 
 .section3 {
-  $section3-color: #FF9C1A;
+  $section3-color: #ff9c1a;
   $hue: hue($section3-color);
   $sat: saturation($section3-color);
   $lit: lightness($section3-color);
   height: 115vh;
-  background: linear-gradient(180deg, $section3-color 0%, $section3-color 1%, hsl($hue, $sat, 1.25*$lit) 50%);
+  background: linear-gradient(
+    180deg,
+    $section3-color 0%,
+    $section3-color 1%,
+    hsl($hue, $sat, 1.25 * $lit) 50%
+  );
 }
 
 .experience-card-carousel {
@@ -153,16 +169,20 @@ div.aboutpics > img {
   height: 27rem;
 }
 
-
-$section4-color:#2F6D83;
+$section4-color: #2f6d83;
 .section4 {
   $hue: hue($section4-color);
   $sat: saturation($section4-color);
   $lit: lightness($section4-color);
-  color:hsl(214, 88%, 9%);
+  color: hsl(214, 88%, 9%);
   height: 115vh;
   // background: linear-gradient(180deg, $section4-color 0%,  #469ab9 50%);
-  background: linear-gradient(180deg, $section4-color 0%, $section4-color 1%, hsl($hue, $sat, 2*$lit) 80%);
+  background: linear-gradient(
+    180deg,
+    $section4-color 0%,
+    $section4-color 1%,
+    hsl($hue, $sat, 2 * $lit) 80%
+  );
 }
 
 $section5-color: #588157;
@@ -171,28 +191,33 @@ $section5-color: #588157;
   $sat: saturation($section5-color);
   $lit: lightness($section5-color);
   height: 115vh;
-  background: linear-gradient(180deg, $section5-color 0%, $section5-color 1%, hsl($hue, $sat, 1.25*$lit) 80%);
+  background: linear-gradient(
+    180deg,
+    $section5-color 0%,
+    $section5-color 1%,
+    hsl($hue, $sat, 1.25 * $lit) 80%
+  );
 }
 
-p.contact_message{
-  font-family: 'Abril Fatface', serif; 
+p.contact_message {
+  font-family: "Abril Fatface", serif;
   font-size: 20pt;
-  width:500px;
-  color:#c5d4c4;
-  margin:0;
-  padding:0;
+  width: 500px;
+  color: #c5d4c4;
+  margin: 0;
+  padding: 0;
 }
 
 $section6-accent: #1b4757;
 .section6 {
-  color:$section6-accent;
+  color: $section6-accent;
   height: 50vh;
   background-color: #000814;
   overflow: hidden;
 }
 
 div.end-flexbox {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   height: 50vh;
 }
@@ -207,9 +232,8 @@ div.copyright p {
   bottom: 3%;
 }
 
-$grad1: #FAA307;
-$grad2: #F48C06;
-$grad3: #E85D04;
+$grad1: #faa307;
+$grad2: #f48c06;
+$grad3: #e85d04;
 $grad4: #dc2f02;
-$grad5:#d00000;
-
+$grad5: #d00000;
