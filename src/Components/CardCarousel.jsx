@@ -62,7 +62,7 @@ const PositionIndicator = styled.div`
   position: absolute;
   left: 46%;
   @media (max-width: ${smallDisplayWidth}) {
-    bottom: 35px;
+    bottom: 20px;
     font-size: 12pt;
   }
 `;

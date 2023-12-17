@@ -20,7 +20,7 @@ div.flexbox-low {
 
 div.flexbox-high {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 2%;
   display: flex;
   padding: 0;
@@ -124,9 +124,12 @@ section p {
   font-size: 15pt;
   color: hsl(1, 65%, 95%);
   max-width: 28rem;
-  @media (max-width: 1175px) {
-    font-size: 11pt;
-    max-width: 18rem;
+  @media (max-width: 1500px) {
+    font-size: 13pt;
+    // max-width: 18rem;
+  }
+  @media (max-width: 1200px) {
+    font-size: 10pt;
   }
   // font-family: "Noto Serif Makasar", serif;
 }

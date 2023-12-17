@@ -2,9 +2,13 @@
 import React from "react";
 import styled from "styled-components";
 
+const smallDisplayWidth = "1400px";
 const CardContainer = styled.div`
-  @media (max-width: 1280px) {
-    transform: scale(0.8);
+  // @media (max-width: 1280px) {
+  //   transform: scale(0.8);
+  // }
+  @media (max-width: ${smallDisplayWidth}) {
+    transform: scale(0.75);
   }
   display: flex;
   height: 100%;
