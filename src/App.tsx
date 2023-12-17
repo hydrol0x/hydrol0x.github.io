@@ -323,8 +323,8 @@ function App() {
           <div className="contact_wrapper">
             <p className="contact_message">
               Whether you've got an inquiry, an idea to share, or simply want to
-              drop a friendly hello<b>—</b> I'm all ears, and I'll try my best
-              to get back to you!
+              drop a friendly hello<b>—</b> I'm all ears and I'll try my best to
+              get back to you!
             </p>
             <ContactButton email={"mrjacobry@gmail.com"} />
           </div>
