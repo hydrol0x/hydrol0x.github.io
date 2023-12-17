@@ -67,9 +67,12 @@ Error generating stack: `+i.message+`
   overflow-wrap: anywhere;
 
   text-shadow: ${({length:e,gradColors:t})=>{e=1500;let n="";for(let r=1;r<=e;r++){const o=`${r}px`;let i=null;r<10?i=t[0]:r<40?i=t[1]:r<90?i=t[2]:r<200?i=t[3]:(r<350,i=t[4]),n+=`1px ${o} 0 ${i},`}return n.slice(0,-1)}};
-`,bn=({text:e,gradColors:t,length:n})=>w.jsx($m,{length:n,gradColors:t,children:e}),Om=O.div`
-  @media (max-width: 1280px) {
-    transform: scale(0.8);
+`,bn=({text:e,gradColors:t,length:n})=>w.jsx($m,{length:n,gradColors:t,children:e}),Om="1400px",Dm=O.div`
+  // @media (max-width: 1280px) {
+  //   transform: scale(0.8);
+  // }
+  @media (max-width: ${Om}) {
+    transform: scale(0.75);
   }
   display: flex;
   height: 100%;
@@ -88,13 +91,13 @@ Error generating stack: `+i.message+`
   // &:hover {
   //   transform: translate(-1%, -1%);
   // }
-`,Dm=O.div`
+`,Mm=O.div`
   flex: 1;
   position: relative;
   width: 350px;
   padding: 10px;
   padding-right: 15px;
-`,Mm=O.h2`
+`,Am=O.h2`
   background-color: transparent;
   font-family: sans-serif;
   margin: 0;
@@ -116,7 +119,7 @@ Error generating stack: `+i.message+`
     color: #007267;
     text-underline-offset: 0.15em;
   }
-`,Am=O.div`
+`,Fm=O.div`
   font-family: sans-serif;
   margin-bottom: 5px;
   font-size: 6pt;
@@ -124,14 +127,14 @@ Error generating stack: `+i.message+`
     margin: 0;
     padding: 0;
   }
-`,Fm=O.h1`
+`,Um=O.h1`
   // padding:0;
   // color:white;
-`,Um=O.h1`
+`,Bm=O.h1`
   // padding:0;
   // margin:0;
   // color:white;
-`,Bm=O.div`
+`,Hm=O.div`
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.05),
@@ -146,13 +149,13 @@ Error generating stack: `+i.message+`
   margin-bottom: 8px;
   //   background-color:red;
   width: 100%;
-`,Hm=O.ul`
+`,Wm=O.ul`
   > li {
     margin-top: 10px;
   }
   padding-left: 10px;
   list-style-type: none;
-`,Wm=O.div`
+`,Vm=O.div`
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.05),
@@ -161,11 +164,11 @@ Error generating stack: `+i.message+`
   border-radius: 8px;
   width: 100%;
   padding: 4px;
-`,Vm=O.ul`
+`,Qm=O.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-`,Qm=O.li`
+`,Km=O.li`
   // color:white;
   font-size: 10pt;
   font-family: sans-serif;
@@ -173,18 +176,18 @@ Error generating stack: `+i.message+`
   border-radius: 4px;
   padding: 4px 8px;
   margin-right: 5px;
-`,Km=O.div`
+`,Ym=O.div`
   height: 100%;
   width: 200px;
   overflow: hidden;
   padding: 0;
-`,Ym=O.img`
+`,Gm=O.img`
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   object-fit: cover;
-`,Gm=({color1:e,color2:t,heading:n,jobName:r,dateLine:o,descriptionList:i,skillList:l,link:u,photoSrc:s})=>w.jsxs(Om,{color1:e,color2:t,children:[w.jsxs(Dm,{children:[w.jsx(Mm,{children:w.jsx("a",{href:u,target:"_blank",rel:"noopener noreferrer",children:n})}),w.jsxs(Am,{children:[w.jsx(Fm,{children:r}),w.jsx(Um,{children:o})]}),w.jsx(Bm,{children:w.jsx(Hm,{children:i.map((c,h)=>w.jsx("li",{children:c},h))})}),w.jsx(Wm,{children:w.jsx(Vm,{children:l.map((c,h)=>w.jsx(Qm,{children:c},h))})})]}),w.jsx(Km,{children:w.jsx(Ym,{src:s,alt:"Job Picture"})})]}),Xm=O.a`
+`,Xm=({color1:e,color2:t,heading:n,jobName:r,dateLine:o,descriptionList:i,skillList:l,link:u,photoSrc:s})=>w.jsxs(Dm,{color1:e,color2:t,children:[w.jsxs(Mm,{children:[w.jsx(Am,{children:w.jsx("a",{href:u,target:"_blank",rel:"noopener noreferrer",children:n})}),w.jsxs(Fm,{children:[w.jsx(Um,{children:r}),w.jsx(Bm,{children:o})]}),w.jsx(Hm,{children:w.jsx(Wm,{children:i.map((c,h)=>w.jsx("li",{children:c},h))})}),w.jsx(Vm,{children:w.jsx(Qm,{children:l.map((c,h)=>w.jsx(Km,{children:c},h))})})]}),w.jsx(Ym,{children:w.jsx(Gm,{src:s,alt:"Job Picture"})})]}),Zm=O.a`
   display: inline-block;
   margin-top:2rem;
   padding: 10px 20px;
@@ -204,122 +207,131 @@ Error generating stack: `+i.message+`
     // box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 5px 0px #000814;
   }
-`,Zm=({email:e})=>{const t=`mailto:${e}`;return w.jsx(Xm,{href:t,children:"Contact"})},va="1400px",Jm=O.a`
-  @media (max-width:${va}) {
-    transform:scale(.75);
+`,Jm=({email:e})=>{const t=`mailto:${e}`;return w.jsx(Zm,{href:t,children:"Contact"})},va="1400px",qm=O.a`
+  @media (max-width: ${va}) {
+    transform: scale(0.75);
   }
   display: flex;
-  height:100%;
+  height: 100%;
   border: 2px solid #000814;
   border-radius: 8px;
-  overflow:hidden;
-  background: rgb(123,205,144);
-  // background: linear-gradient(90deg, rgba(123,205,144,1) 6%, rgba(66,215,189,1) 100%); 
-  background: linear-gradient(90deg, ${e=>e.color1} 6%, ${e=>e.color2} 100%);
-  color:#20252b;
-  transition: box-shadow .25s, transform 0.25s ease-in-out;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    ${e=>e.color1} 6%,
+    ${e=>e.color2} 100%
+  );
+  color: #20252b;
+  transition: box-shadow 0.25s, transform 0.25s ease-in-out;
   box-shadow: 2px 2px 0px #000814;
-  text-decoration:none;
+  text-decoration: none;
 
   &:hover {
-    transform: scale(1) translate(-.5%, -.5%);
-    @media (max-width:${va}) {
-      transform:scale(.75) translate(-.5%, -.5%);
+    transform: scale(1) translate(-0.5%, -0.5%);
+    @media (max-width: ${va}) {
+      transform: scale(0.75) translate(-0.5%, -0.5%);
     }
     box-shadow: 5px 5px 0px #000814;
   }
-`,qm=O.div`
+`,bm=O.div`
   flex: 1;
-  position:relative;
-  width:350px; 
-  padding:10px;
-  padding-right:15px;
-`,bm=O.h2`
-  background-color:transparent;
+  position: relative;
+  width: 350px;
+  padding: 10px;
+  padding-right: 15px;
+`,e0=O.h2`
+  background-color: transparent;
   font-family: sans-serif;
-  margin:0;
+  margin: 0;
   font-size: 30px;
   margin-bottom: 8px;
   padding-bottom: 3px;
-  border-bottom: 2px solid #007267; 
+  border-bottom: 2px solid #007267;
 
   > a {
-    text-decoration:none;
-    color:black;
+    text-decoration: none;
+    color: black;
     width: 100%;
     height: 100%;
   }
-  
-`,e0=O.div`
-    font-family:sans-serif;
-    margin-bottom:5px;
-    font-size:6pt;
-    > h1 {
-        margin:0;
-        padding:0;
-    } 
-`,t0=O.h1`
-    // padding:0;
-    // color:white;
+`,t0=O.div`
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  font-size: 6pt;
+  > h1 {
+    margin: 0;
+    padding: 0;
+  }
+`,n0=O.h1`
+  // padding:0;
+  // color:white;
 `;O.h1`
-    // padding:0;
-    // margin:0;
-    // color:white;
-`;const n0=O.div`
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
-  padding:4px;
-  border-radius:8px;
-  margin:0;
-  font-size:12pt;
-  font-family:sans-serif;
+  // padding:0;
+  // margin:0;
+  // color:white;
+`;const r0=O.div`
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.2)
+  );
+  padding: 4px;
+  border-radius: 8px;
+  margin: 0;
+  font-size: 12pt;
+  font-family: sans-serif;
   // color:white;
   margin-bottom: 8px;
-//   background-color:red;
-  width:100%;
-`,r0=O.ul`
-    > li {
-        margin-top:10px;
-    }
-    padding-left:10px;
-    list-style-type:none;
-`,o0=O.div`
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .20)); 
-  border-radius:8px;
-  width:100%;
-  padding:4px;
-`,i0=O.ul`
+  //   background-color:red;
+  width: 100%;
+`,o0=O.ul`
+  > li {
+    margin-top: 10px;
+  }
+  padding-left: 10px;
+  list-style-type: none;
+`,i0=O.div`
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 8px;
+  width: 100%;
+  padding: 4px;
+`,l0=O.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-`,l0=O.li`
+`,u0=O.li`
   // color:white;
-  font-size:10pt;
-  font-family:sans-serif;
+  font-size: 10pt;
+  font-family: sans-serif;
   display: inline-block;
   border-radius: 4px;
   padding: 4px 8px;
   margin-right: 5px;
-`,u0=O.div`
+`,s0=O.div`
   height: 100%;
   width: 200px; /* Adjust the width as per your needs */
   overflow: hidden;
-  padding:0;
-  position:relative;
-`,s0=O.img`
+  padding: 0;
+  position: relative;
+`,a0=O.img`
   height: 100%;
   width: 100%;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   object-fit: cover;
   object-position: ${e=>e.objectPosition||"50% 50%"};
-`,a0=({color1:e,color2:t,heading:n,subHeading:r,descriptionList:o,skillList:i,link:l,photoSrc:u,alt:s,imgPosition:c})=>w.jsxs(Jm,{target:"_blank",rel:"noopener noreferrer",href:l,color1:e,color2:t,children:[w.jsxs(qm,{children:[w.jsx(bm,{children:w.jsx("a",{href:l,children:n})}),w.jsx(e0,{children:w.jsx(t0,{children:r})}),w.jsx(n0,{children:w.jsx(r0,{children:o.map((h,m)=>w.jsx("li",{children:h},m))})}),w.jsx(o0,{children:w.jsx(i0,{children:i.map((h,m)=>w.jsx(l0,{children:h},m))})})]}),w.jsx(u0,{children:w.jsx(s0,{src:u,alt:s,objectPosition:c})})]});var c0=typeof document<"u"?ge.useLayoutEffect:ge.useEffect,f0=({axis:e="x",initialPages:t=[]}={})=>{const n=e==="x"?"width":"height",r=e==="x"?"scrollWidth":"scrollHeight",o=e==="x"?"clientWidth":"clientHeight",i=e==="x"?"left":"top",l=e==="x"?"right":"bottom",u=e==="x"?"scrollLeft":"scrollTop",[s,c]=ge.useState(null),[{pages:h,activePageIndex:m},p]=ge.useState({pages:t,activePageIndex:0}),v=ge.useCallback(f=>{if(!s)return;if(Math.floor(s[r]-s[u])<=s[o]){p({pages:f,activePageIndex:f.length-1});return}const E=Array.from(s.children),C=s.getBoundingClientRect(),y=f.map(L=>{const te=L[0],Ee=E[te];On(Ee instanceof HTMLElement,"Expected HTMLElement");const be=Ki(s,Ee,i),Bn=Ee.getBoundingClientRect()[i]-C[i]-be;return Math.abs(Bn)}),_=Math.min(...y),D=y.indexOf(_);p({pages:f,activePageIndex:D})},[s,o,i,r,u]),x=ge.useCallback(()=>{if(!s)return;const f=Array.from(s.children),g=s.getBoundingClientRect();let E;const C=f.reduce((y,_,D)=>{On(_ instanceof HTMLElement,"Expected HTMLElement");const L=y[y.length-1],te=Yl(_,_.parentElement);if(!L||te[l]-E>Math.ceil(g[n])){y.push([D]);const Ee=Ki(s,_,i);E=te[i]-Ee}else L.push(D);return y},[]);v(C)},[v,s,n,l,i,u]);c0(()=>{x()},[x]),ge.useEffect(()=>{const f=()=>{x()};return window.addEventListener("resize",f),window.addEventListener("orientationchange",f),()=>{window.removeEventListener("resize",f),window.removeEventListener("orientationchange",f)}},[x]),ge.useEffect(()=>{if(!s)return;const f=()=>{v(h)};return s.addEventListener("scroll",f),()=>{s.removeEventListener("scroll",f)}},[v,h,s]);const k=f=>{if(!s)return;const g=h[f];if(!g)return;const E=Array.from(s.children),C=g[0],y=E[C];if(!(y instanceof HTMLElement))return;const _=Ki(s,y,i);s.scrollTo({behavior:"smooth",[i]:Yl(y,y.parentElement)[i]-_})},T=()=>{k(m-1)},d=()=>{k(m+1)},a=ge.useMemo(()=>new Set(h.map(f=>f[0])),[h]);return{prev:T,next:d,goTo:k,refresh:x,pages:h,activePageIndex:m,snapPointIndexes:a,scrollRef:c}},Yl=(e,t)=>{const n=ya(e);if(!t)return n;const r=ya(t);return{left:n.left-r.left,top:n.top-r.top,right:n.right-r.left,bottom:n.bottom-r.top,width:n.width,height:n.height}},ya=e=>{const t=e.getBoundingClientRect();let n=0,r=0,o=e.parentElement;for(;o;)n+=o.scrollLeft,r+=o.scrollTop,o=o.parentElement;const i=t.left+n,l=t.top+r;return{left:i,top:l,right:i+t.width,bottom:l+t.height,width:t.width,height:t.height}},d0=(e,t)=>{const r=window.getComputedStyle(e).getPropertyValue(`scroll-padding-${t}`);if(r==="auto")return 0;const o=`Unsupported scroll padding value, expected <length> or <percentage> value, received ${r}`;if(r.endsWith("px")){const i=parseInt(r);return On(!Number.isNaN(i),o),i}if(r.endsWith("%")){const i=parseInt(r);return On(!Number.isNaN(i),o),e.clientWidth/100*i}throw new td(o)},p0=(e,t)=>{const r=window.getComputedStyle(e).getPropertyValue(`scroll-margin-${t}`),o=`Unsupported scroll margin value, expected <length> value, received ${r}`;On(r.endsWith("px"),o);const i=parseInt(r);return On(!Number.isNaN(i),o),i},Ki=(e,t,n)=>{const r=d0(e,n),o=p0(t,n),i=Yl(t,t.parentElement);return Math.min(r+o,i[n])};function On(e,t){if(!e)throw new td(t)}var td=class extends Error{constructor(e){super(`[react-snap-carousel]: ${e}`)}};const nd="1400px",h0=O.div`
+`,c0=({color1:e,color2:t,heading:n,subHeading:r,descriptionList:o,skillList:i,link:l,photoSrc:u,alt:s,imgPosition:c})=>w.jsxs(qm,{target:"_blank",rel:"noopener noreferrer",href:l,color1:e,color2:t,children:[w.jsxs(bm,{children:[w.jsx(e0,{children:w.jsx("a",{href:l,children:n})}),w.jsx(t0,{children:w.jsx(n0,{children:r})}),w.jsx(r0,{children:w.jsx(o0,{children:o.map((h,m)=>w.jsx("li",{children:h},m))})}),w.jsx(i0,{children:w.jsx(l0,{children:i.map((h,m)=>w.jsx(u0,{children:h},m))})})]}),w.jsx(s0,{children:w.jsx(a0,{src:u,alt:s,objectPosition:c})})]});var f0=typeof document<"u"?ge.useLayoutEffect:ge.useEffect,d0=({axis:e="x",initialPages:t=[]}={})=>{const n=e==="x"?"width":"height",r=e==="x"?"scrollWidth":"scrollHeight",o=e==="x"?"clientWidth":"clientHeight",i=e==="x"?"left":"top",l=e==="x"?"right":"bottom",u=e==="x"?"scrollLeft":"scrollTop",[s,c]=ge.useState(null),[{pages:h,activePageIndex:m},p]=ge.useState({pages:t,activePageIndex:0}),v=ge.useCallback(f=>{if(!s)return;if(Math.floor(s[r]-s[u])<=s[o]){p({pages:f,activePageIndex:f.length-1});return}const E=Array.from(s.children),C=s.getBoundingClientRect(),y=f.map(L=>{const te=L[0],Ee=E[te];On(Ee instanceof HTMLElement,"Expected HTMLElement");const be=Ki(s,Ee,i),Bn=Ee.getBoundingClientRect()[i]-C[i]-be;return Math.abs(Bn)}),_=Math.min(...y),D=y.indexOf(_);p({pages:f,activePageIndex:D})},[s,o,i,r,u]),x=ge.useCallback(()=>{if(!s)return;const f=Array.from(s.children),g=s.getBoundingClientRect();let E;const C=f.reduce((y,_,D)=>{On(_ instanceof HTMLElement,"Expected HTMLElement");const L=y[y.length-1],te=Yl(_,_.parentElement);if(!L||te[l]-E>Math.ceil(g[n])){y.push([D]);const Ee=Ki(s,_,i);E=te[i]-Ee}else L.push(D);return y},[]);v(C)},[v,s,n,l,i,u]);f0(()=>{x()},[x]),ge.useEffect(()=>{const f=()=>{x()};return window.addEventListener("resize",f),window.addEventListener("orientationchange",f),()=>{window.removeEventListener("resize",f),window.removeEventListener("orientationchange",f)}},[x]),ge.useEffect(()=>{if(!s)return;const f=()=>{v(h)};return s.addEventListener("scroll",f),()=>{s.removeEventListener("scroll",f)}},[v,h,s]);const k=f=>{if(!s)return;const g=h[f];if(!g)return;const E=Array.from(s.children),C=g[0],y=E[C];if(!(y instanceof HTMLElement))return;const _=Ki(s,y,i);s.scrollTo({behavior:"smooth",[i]:Yl(y,y.parentElement)[i]-_})},T=()=>{k(m-1)},d=()=>{k(m+1)},a=ge.useMemo(()=>new Set(h.map(f=>f[0])),[h]);return{prev:T,next:d,goTo:k,refresh:x,pages:h,activePageIndex:m,snapPointIndexes:a,scrollRef:c}},Yl=(e,t)=>{const n=ya(e);if(!t)return n;const r=ya(t);return{left:n.left-r.left,top:n.top-r.top,right:n.right-r.left,bottom:n.bottom-r.top,width:n.width,height:n.height}},ya=e=>{const t=e.getBoundingClientRect();let n=0,r=0,o=e.parentElement;for(;o;)n+=o.scrollLeft,r+=o.scrollTop,o=o.parentElement;const i=t.left+n,l=t.top+r;return{left:i,top:l,right:i+t.width,bottom:l+t.height,width:t.width,height:t.height}},p0=(e,t)=>{const r=window.getComputedStyle(e).getPropertyValue(`scroll-padding-${t}`);if(r==="auto")return 0;const o=`Unsupported scroll padding value, expected <length> or <percentage> value, received ${r}`;if(r.endsWith("px")){const i=parseInt(r);return On(!Number.isNaN(i),o),i}if(r.endsWith("%")){const i=parseInt(r);return On(!Number.isNaN(i),o),e.clientWidth/100*i}throw new td(o)},h0=(e,t)=>{const r=window.getComputedStyle(e).getPropertyValue(`scroll-margin-${t}`),o=`Unsupported scroll margin value, expected <length> value, received ${r}`;On(r.endsWith("px"),o);const i=parseInt(r);return On(!Number.isNaN(i),o),i},Ki=(e,t,n)=>{const r=p0(e,n),o=h0(t,n),i=Yl(t,t.parentElement);return Math.min(r+o,i[n])};function On(e,t){if(!e)throw new td(t)}var td=class extends Error{constructor(e){super(`[react-snap-carousel]: ${e}`)}};const nd="1400px",m0=O.div`
   position: relative;
   //   width: 50%;
 
   width: 40rem;
   // height: 100%;
   //   overflow: hidden;
-`,m0=O.ul`
+`,g0=O.ul`
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -358,16 +370,16 @@ Error generating stack: `+i.message+`
     // box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 5px 0px #000814;
   }
-`,g0=O.div`
+`,v0=O.div`
   font-family: "Abril Fatface";
   font-size: 14pt;
   position: absolute;
   left: 46%;
   @media (max-width: ${nd}) {
-    bottom: 35px;
+    bottom: 20px;
     font-size: 12pt;
   }
-`,xa=({children:e})=>{const{scrollRef:t,pages:n,activePageIndex:r,next:o,prev:i,goTo:l}=f0();return w.jsxs(h0,{children:[w.jsx(m0,{ref:t,children:Yt.Children.map(e,(u,s)=>w.jsx("li",{style:{minWidth:"100%",flexShrink:0,display:"flex",justifyContent:"center",alignItems:"center"},children:u},s))}),w.jsx(wa,{left:!0,onClick:()=>i(),children:"<"}),w.jsx(wa,{onClick:()=>o(),children:">"}),w.jsxs(g0,{children:[r+1," / ",n.length]})]})};function v0(){const e=`
+`,xa=({children:e})=>{const{scrollRef:t,pages:n,activePageIndex:r,next:o,prev:i,goTo:l}=d0();return w.jsxs(m0,{children:[w.jsx(g0,{ref:t,children:Yt.Children.map(e,(u,s)=>w.jsx("li",{style:{minWidth:"100%",flexShrink:0,display:"flex",justifyContent:"center",alignItems:"center"},children:u},s))}),w.jsx(wa,{left:!0,onClick:()=>i(),children:"<"}),w.jsx(wa,{onClick:()=>o(),children:">"}),w.jsxs(v0,{children:[r+1," / ",n.length]})]})};function y0(){const e=`
       ,
       _,,).~,,._
       (()\`  \`\`)))),,_
@@ -404,4 +416,4 @@ Error generating stack: `+i.message+`
                   | | | | |   | /       || |   | _
             . .. |_ / | / |  ._|||_| .. / | | _||__|_..  . not so infinite horse.
                     
-  `,t=["#FBB028","#F69C28","#EB7426","#E14C21","#D72523"],n=["#FFE8A3","#FFD581","#FFC25F","#FFAF3C","#FF9C1A"],r=["#FDF1CA","#CAD0B8","#96AFA7","#638E95","#2F6D83"],o=["#FDF1CB","#D4D5AE","#ABB991","#819D74","#588157"],i=["#D4EAC8","#9FB29B","#6A796E","#354141","#000814"],l=[{className:"experience_card",color1:"#7BCD90",color2:"#58D3AC",dateLine:"July 21, 2023 - Present",descriptionList:["Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion","Maintain and update pose-estimation pipeline","Configured video compression using NVENC encoder to compress on hardware"],heading:"Max Planck Florida Institute",jobName:"Laboratory Technician",skillList:["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning","NVIDIA NVENC","FFMPEG"],photoSrc:"https://www.mpfi.org/wp-content/uploads/Test/MaxPlanckFlorida_header_2400-2200x1431.jpg",link:"https://www.mpfi.org/science/our-labs/bidaye-lab/"},{className:"experience_card",color1:"#7BCD90",color2:"#58D3AC",dateLine:"June 12 - July 21, 2023",descriptionList:["Working under the Bidaye Lab, which aims to understand neuronal control of locomotion","Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data","Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."],heading:"Max Planck Florida Institute",jobName:"Scientific Programming Intern",skillList:["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning"],photoSrc:"https://github.com/hydrol0x/hydrol0x.github.io/assets/34951139/a014f4ac-3440-44c2-bdc8-4bc365595ff7",link:"https://youtu.be/jEgXgPclZ7U?si=vaVT2BIik-5ziNh6"}],u=[{className:"experience_card",color1:"#5de8dc",color2:"#52cbd1",descriptionList:["Retriever allows users with visual impairment or blindness to use certain aspects of their computer just with their voice.","Uses a large language model to perform natural language processing on the users command and determine the intent.","Performs actions very quickly without human interaction with the OS GUI."],heading:"Retriever AI",subHeading:"Accesibility tool for the visually impaired",skillList:["OpenAI Whisper","PaLM2","C#","WinUI 3.0","ElevenLabs Voice Generation"],link:"https://retriever.fyi/",photoSrc:"https://github.com/hydrol0x/retriever/assets/34951139/21c7998b-83a8-4438-a3bd-3822ccee0dd3",alt:"Amazon Logo",imgPosition:"42% 50%"},{className:"experience_card",color1:"#61d48b",color2:"#1dbbcf",descriptionList:["Creating an innovative Natural Language Processing (NLP) system tailored for financial data analysis, powered by Google's PaLM 2 AI technology.","Leverages data from the U.S. Securities and Exchange Commission (SEC) through their EDGAR system to extract crucial financial details from company filings (10-K, 10-Q, and 8-K).","Empowering investors, analysts, and financial institutions with up-to-date and relevant financial information for informed decision-making."],heading:"Earning.ly",subHeading:"Financial AI Assistant",skillList:["Python","PaLM2","Google Cloud Vertex","SEC Edgar API"],link:"https://lablab.ai/event/google-vertex-ai-hackathon/peppermint/earningly",photoSrc:"https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg",alt:"Stock Market Photo, Katrina.Tuliao CC BY 2.0 via Wikimedia Commons",imgPosition:"20% 50%"},{className:"experience_card",color1:"#f5ca3d",color2:"#e09626",descriptionList:["Detects and handles multiple types of Amazon listing page types","Utilizes the Beautiful Soup python library to parse HTML output","Returns key information about a product, allowing you to programatically get product information from product page links, without needing an expensive API."],heading:"Amazon Web Crawler",subHeading:"Amazon Product Page Crawler",skillList:["HTTP requests","Beautiful Soup","HTML"],link:"https://github.com/hydrol0x/Amazon-to-Ebay/blob/master/amzn_product_scraper.py",photoSrc:"https://github.com/hydrol0x/hydrol0x.github.io/assets/34951139/9576a973-a393-4a8d-a600-bfbc7f0a756f",alt:"Amazon Logo",imgPosition:"55% 50%"},{className:"experience_card",color1:"#d8f0e7",color2:"#ceebed",descriptionList:["I'm always working on more projects and expanding my skillset...","If you're interested in working together, feel free to contact me!","Or, visit my github to see some smaller work."],heading:"More Projects...",subHeading:"An amazing project",skillList:["Time","Effort","Skill"],link:"#contact",photoSrc:"https://via.placeholder.com/100",alt:"Placeholder Image",imgPosition:"-40% 20%"}];return w.jsxs(w.Fragment,{children:[w.jsx(jh,{}),w.jsx("section",{className:"section1",id:"home",children:w.jsxs("div",{className:"flexbox-high",children:[w.jsxs("div",{className:"greeting_title",children:[w.jsx("h1",{className:"greeting_subhead",children:"Hey, I'm"}),w.jsx(bn,{text:"JACOB RYABINKY",gradColors:t,length:800})]}),w.jsxs("p",{className:"welcome_paragraph",children:["Student at Suncoast Highschool and Palm Beach State College, currently focusing on"," ",w.jsx("mark",{children:"scientific programming, machine learning, and data science."})]})]})}),w.jsx("section",{className:"section2",id:"about",children:w.jsxs("div",{className:"flexbox-high",children:[w.jsxs("div",{className:"about-text-wrapper",children:[w.jsx(bn,{text:"About",gradColors:n,length:800}),w.jsxs("p",{className:"info_para",children:["Computer science is my passion, but I think that"," ",w.jsx("mark",{children:w.jsx("strong",{children:"great things come from intersections of knowledge"})}),". That's why I work to apply my knowledge of programming to whatever I can think of— whether it's in scientific data analysis, diabetes care, or even just to help me learn sheet music on the guitar. I also love to teach and share my skills. Whether it's sharing among my friends, tutoring in the school programming club, or developing comprehensive lessons, I think that teaching is the best path towards connection and collaboration. I'm always on the look out for the next big technology or my next"," ",w.jsx("a",{href:"#contact",style:{color:"#ffecad"},children:"collaboration"}),"!"]})]}),w.jsx("div",{className:"aboutpics",children:w.jsx("img",{src:"https://github.com/hydrol0x/hydrol0x.github.io/blob/main/src/assets/testpictures.png?raw=true"})})]})}),w.jsx("section",{className:"section3",id:"experience",children:w.jsxs("div",{className:"flexbox-low",children:[w.jsx("div",{children:w.jsx(bn,{text:"Experience",gradColors:r,length:800})}),w.jsx("div",{children:w.jsx(xa,{children:l.map(s=>w.jsx(Gm,{...s}))})})]})}),w.jsx("section",{className:"section4",id:"projects",children:w.jsxs("div",{className:"flexbox-low",children:[w.jsx("div",{children:w.jsx(bn,{text:"Projects",gradColors:o,length:800})}),w.jsx(xa,{children:u.map(s=>w.jsx(a0,{...s}))})]})}),w.jsx("section",{className:"section5",id:"contact",children:w.jsxs("div",{className:"flexbox-low",children:[w.jsx("div",{children:w.jsx(bn,{text:"Contact",gradColors:i,length:800})}),w.jsxs("div",{className:"contact_wrapper",children:[w.jsxs("p",{className:"contact_message",children:["Whether you've got an inquiry, an idea to share, or simply want to drop a friendly hello",w.jsx("b",{children:"—"})," I'm all ears and I'll try my best to get back to you!"]}),w.jsx(Zm,{email:"mrjacobry@gmail.com"})]})]})}),w.jsx("footer",{className:"section6",id:"end",children:w.jsxs("div",{className:"end-flexbox",children:[w.jsx("pre",{className:"horse",children:e}),w.jsx("div",{className:"copyright",children:w.jsx("p",{children:"© Jacob Ryabinky 2023"})}),w.jsx(Lh,{})]})})]})}Yi.createRoot(document.getElementById("root")).render(w.jsx(Yt.StrictMode,{children:w.jsx(v0,{})}));
+  `,t=["#FBB028","#F69C28","#EB7426","#E14C21","#D72523"],n=["#FFE8A3","#FFD581","#FFC25F","#FFAF3C","#FF9C1A"],r=["#FDF1CA","#CAD0B8","#96AFA7","#638E95","#2F6D83"],o=["#FDF1CB","#D4D5AE","#ABB991","#819D74","#588157"],i=["#D4EAC8","#9FB29B","#6A796E","#354141","#000814"],l=[{className:"experience_card",color1:"#7BCD90",color2:"#58D3AC",dateLine:"July 21, 2023 - Present",descriptionList:["Worked under the Bidaye Lab, which aims to understand neuronal control of locomotion","Maintain and update pose-estimation pipeline","Configured video compression using NVENC encoder to compress on hardware"],heading:"Max Planck Florida Institute",jobName:"Laboratory Technician",skillList:["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning","NVIDIA NVENC","FFMPEG"],photoSrc:"https://www.mpfi.org/wp-content/uploads/Test/MaxPlanckFlorida_header_2400-2200x1431.jpg",link:"https://www.mpfi.org/science/our-labs/bidaye-lab/"},{className:"experience_card",color1:"#7BCD90",color2:"#58D3AC",dateLine:"June 12 - July 21, 2023",descriptionList:["Working under the Bidaye Lab, which aims to understand neuronal control of locomotion","Working alongside a post-doc in the lab, I created a pipeline using python in order to automate the processing of experimental data","Utilized libraries such as DeepLabCut and Anipose to create 2D annotated experiment data and then 3D reconstructions of Drosophila locomotion."],heading:"Max Planck Florida Institute",jobName:"Scientific Programming Intern",skillList:["Python","Pandas","Numpy","DeepLabCut","Anipose","Machine Learning"],photoSrc:"https://github.com/hydrol0x/hydrol0x.github.io/assets/34951139/a014f4ac-3440-44c2-bdc8-4bc365595ff7",link:"https://youtu.be/jEgXgPclZ7U?si=vaVT2BIik-5ziNh6"}],u=[{className:"experience_card",color1:"#5de8dc",color2:"#52cbd1",descriptionList:["Retriever allows users with visual impairment or blindness to use certain aspects of their computer just with their voice.","Uses a large language model to perform natural language processing on the users command and determine the intent.","Performs actions very quickly without human interaction with the OS GUI."],heading:"Retriever AI",subHeading:"Accesibility tool for the visually impaired",skillList:["OpenAI Whisper","PaLM2","C#","WinUI 3.0","ElevenLabs Voice Generation"],link:"https://retriever.fyi/",photoSrc:"https://github.com/hydrol0x/retriever/assets/34951139/21c7998b-83a8-4438-a3bd-3822ccee0dd3",alt:"Amazon Logo",imgPosition:"42% 50%"},{className:"experience_card",color1:"#61d48b",color2:"#1dbbcf",descriptionList:["Creating an innovative Natural Language Processing (NLP) system tailored for financial data analysis, powered by Google's PaLM 2 AI technology.","Leverages data from the U.S. Securities and Exchange Commission (SEC) through their EDGAR system to extract crucial financial details from company filings (10-K, 10-Q, and 8-K).","Empowering investors, analysts, and financial institutions with up-to-date and relevant financial information for informed decision-making."],heading:"Earning.ly",subHeading:"Financial AI Assistant",skillList:["Python","PaLM2","Google Cloud Vertex","SEC Edgar API"],link:"https://lablab.ai/event/google-vertex-ai-hackathon/peppermint/earningly",photoSrc:"https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg",alt:"Stock Market Photo, Katrina.Tuliao CC BY 2.0 via Wikimedia Commons",imgPosition:"20% 50%"},{className:"experience_card",color1:"#f5ca3d",color2:"#e09626",descriptionList:["Detects and handles multiple types of Amazon listing page types","Utilizes the Beautiful Soup python library to parse HTML output","Returns key information about a product, allowing you to programatically get product information from product page links, without needing an expensive API."],heading:"Amazon Web Crawler",subHeading:"Amazon Product Page Crawler",skillList:["HTTP requests","Beautiful Soup","HTML"],link:"https://github.com/hydrol0x/Amazon-to-Ebay/blob/master/amzn_product_scraper.py",photoSrc:"https://github.com/hydrol0x/hydrol0x.github.io/assets/34951139/9576a973-a393-4a8d-a600-bfbc7f0a756f",alt:"Amazon Logo",imgPosition:"55% 50%"},{className:"experience_card",color1:"#d8f0e7",color2:"#ceebed",descriptionList:["I'm always working on more projects and expanding my skillset...","If you're interested in working together, feel free to contact me!","Or, visit my github to see some smaller work."],heading:"More Projects...",subHeading:"An amazing project",skillList:["Time","Effort","Skill"],link:"#contact",photoSrc:"https://via.placeholder.com/100",alt:"Placeholder Image",imgPosition:"-40% 20%"}];return w.jsxs(w.Fragment,{children:[w.jsx(jh,{}),w.jsx("section",{className:"section1",id:"home",children:w.jsxs("div",{className:"flexbox-high",children:[w.jsxs("div",{className:"greeting_title",children:[w.jsx("h1",{className:"greeting_subhead",children:"Hey, I'm"}),w.jsx(bn,{text:"JACOB RYABINKY",gradColors:t,length:800})]}),w.jsxs("p",{className:"welcome_paragraph",children:["Student at Suncoast Highschool and Palm Beach State College, currently focusing on"," ",w.jsx("mark",{children:"scientific programming, machine learning, and data science."})]})]})}),w.jsx("section",{className:"section2",id:"about",children:w.jsxs("div",{className:"flexbox-high",children:[w.jsxs("div",{className:"about-text-wrapper",children:[w.jsx(bn,{text:"About",gradColors:n,length:800}),w.jsxs("p",{className:"info_para",children:["Computer science is my passion, but I think that"," ",w.jsx("mark",{children:w.jsx("strong",{children:"great things come from intersections of knowledge"})}),". That's why I work to apply my knowledge of programming to whatever I can think of— whether it's in scientific data analysis, diabetes care, or even just to help me learn sheet music on the guitar. I also love to teach and share my skills. Whether it's sharing among my friends, tutoring in the school programming club, or developing comprehensive lessons, I think that teaching is the best path towards connection and collaboration. I'm always on the look out for the next big technology or my next"," ",w.jsx("a",{href:"#contact",style:{color:"#ffecad"},children:"collaboration"}),"!"]})]}),w.jsx("div",{className:"aboutpics",children:w.jsx("img",{src:"https://github.com/hydrol0x/hydrol0x.github.io/blob/main/src/assets/testpictures.png?raw=true"})})]})}),w.jsx("section",{className:"section3",id:"experience",children:w.jsxs("div",{className:"flexbox-low",children:[w.jsx("div",{children:w.jsx(bn,{text:"Experience",gradColors:r,length:800})}),w.jsx("div",{children:w.jsx(xa,{children:l.map(s=>w.jsx(Xm,{...s}))})})]})}),w.jsx("section",{className:"section4",id:"projects",children:w.jsxs("div",{className:"flexbox-low",children:[w.jsx("div",{children:w.jsx(bn,{text:"Projects",gradColors:o,length:800})}),w.jsx(xa,{children:u.map(s=>w.jsx(c0,{...s}))})]})}),w.jsx("section",{className:"section5",id:"contact",children:w.jsxs("div",{className:"flexbox-low",children:[w.jsx("div",{children:w.jsx(bn,{text:"Contact",gradColors:i,length:800})}),w.jsxs("div",{className:"contact_wrapper",children:[w.jsxs("p",{className:"contact_message",children:["Whether you've got an inquiry, an idea to share, or simply want to drop a friendly hello",w.jsx("b",{children:"—"})," I'm all ears and I'll try my best to get back to you!"]}),w.jsx(Jm,{email:"mrjacobry@gmail.com"})]})]})}),w.jsx("footer",{className:"section6",id:"end",children:w.jsxs("div",{className:"end-flexbox",children:[w.jsx("pre",{className:"horse",children:e}),w.jsx("div",{className:"copyright",children:w.jsx("p",{children:"© Jacob Ryabinky 2023"})}),w.jsx(Lh,{})]})})]})}Yi.createRoot(document.getElementById("root")).render(w.jsx(Yt.StrictMode,{children:w.jsx(y0,{})}));
