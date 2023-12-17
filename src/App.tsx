@@ -324,9 +324,12 @@ function App() {
           </div>
           <div className="contact_wrapper">
             <p className="contact_message">
-              Whether you've got an inquiry, an idea to share, or simply want to
-              drop a friendly hello<b>—</b> I'm all ears and I'll try my best to
-              get back to you!
+              Whether you've got an{" "}
+              <mark>
+                <mark>inquiry</mark>, an <mark>idea</mark> to share, or simply
+                want to drop a <mark>friendly hello</mark>
+              </mark>
+              <b>—</b> I'm all ears and I'll try my best to get back to you!
             </p>
             <ContactButton email={"mrjacobry@gmail.com"} />
           </div>

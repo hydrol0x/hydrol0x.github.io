@@ -203,8 +203,13 @@ $section5-color: #588157;
 }
 
 p.contact_message {
-  font-family: "Abril Fatface", serif;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
   font-size: 20pt;
+  font-size: 2vw;
+  @media (min-width: 2000px) {
+    font-size: 25pt;
+  }
   width: 500px;
   color: #c5d4c4;
   margin: 0;
