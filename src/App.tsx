@@ -187,7 +187,7 @@ function App() {
       heading: "More Projects...",
       subHeading: "An amazing project",
       skillList: ["Time", "Effort", "Skill"],
-      link: "#contact",
+      link: "https://github.com/hydrol0x",
       photoSrc:
         "https://github.com/hydrol0x/hydrol0x.github.io/assets/34951139/6e81c53c-1eff-456a-b7d6-1f862aa500d0",
       alt: "",
