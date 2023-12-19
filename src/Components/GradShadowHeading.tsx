@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const StyledH1 = styled.h1`
   padding: 0;
+  padding-right: 0.5em;
   margin: 0;
   font-size: 5.5vw;
 
@@ -27,6 +28,9 @@ const StyledH1 = styled.h1`
   max-width: 60rem;
   letter-spacing: 2px; // helps alleviate problems with very small gaps between shadows
   overflow-wrap: anywhere;
+  @media (min-width: 1000px) {
+    white-space: nowrap;
+  }
 
   text-shadow: ${({ length, gradColors }) => {
     length = 1500;
