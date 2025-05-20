@@ -210,8 +210,8 @@ function App() {
             />
           </div>
           <p className="welcome_paragraph">
-            Student at Suncoast Highschool and Palm Beach State College,
-            currently focusing on{" "}
+            Student at Columbia University,
+            currently focusing on
             <mark>
               scientific programming, <mark>machine</mark> learning, and data
               science.
@@ -339,7 +339,7 @@ function App() {
         <div className="end-flexbox">
           <pre className="horse">{horse}</pre>
           <div className="copyright">
-            <p>© Jacob Ryabinky 2023</p>
+            <p>© Jacob Ryabinky 2025</p>
           </div>
           <FooterBar />
         </div>
